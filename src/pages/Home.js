@@ -1,17 +1,19 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
-import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import Summary from '@/components/Summary'
+import Footer from '@/components/Footer'
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <Header />
+      <Hero />
+      <Summary />
+      <Footer />
     </>
     )
-        {/*<Summary />
-        <Cubesat />
-        <Footer />*/}
+        {/*<Cubesat />*/}
 }
 
 export default Home

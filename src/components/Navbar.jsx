@@ -1,19 +1,20 @@
 "use client"
 import React, { useState } from 'react'
-import Logo from './Logo'
+import Image from 'next/image'
+import Logo from './../../public/Logo.png'
 
 const Navbar = () => {
-    const [isClick, setIsClick] = useState(false);
+    const [isClick, setIsClick] = useState(false)
     const toggleNavbar = () => {
         setIsClick(!isClick)
     }
   return (
-    <nav className='bg-black'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+    <nav className='bg-black p-3'>
+        <div className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='flex items-center justify-between h-16'>
                 <div className='flex items-center'>
                     <div className='flex-shrink-0'>
-                        <a href='/' className='text-white'>Logo</a>
+                        <a href='/' className='text-white'><Image className='w-[6vw]'  src={Logo} alt="logo" /></a>
                     </div>
                 </div>
                 <div className='hidden md:block'>
@@ -72,7 +73,7 @@ const Navbar = () => {
                     <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition  duration-300 ease-in-out'>Subsystems</a>
                     <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Contact Us</a>
                     <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Join Us</a>
-                    <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Projects</a>
+                    {/* <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Projects</a> */}
                 </div>
             </div>
         )}
