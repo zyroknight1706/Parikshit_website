@@ -1,7 +1,13 @@
-import Home from "@/pages/Home";
+import Hero from "@/components/Hero"
+import Summary from "@/components/Summary";
+import Cubesat from "@/components/Cubesat"
 
 export default function App() {
   return (
-    <Home />
+    <>
+    <Hero />
+    <Summary />
+    <Cubesat />
+    </>
   );
 }

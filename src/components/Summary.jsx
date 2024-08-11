@@ -5,7 +5,7 @@ import SatImage from './../../public/SatImage.jpeg'
 
 export default function Summary() {
   return (
-    <div className="relative isolate overflow-hidden bg-black text-indigo-600 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div className="items-center relative isolate overflow-hidden bg-black text-indigo-600 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           aria-hidden="true"
