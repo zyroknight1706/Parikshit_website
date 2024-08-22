@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <a href="/" className="text-white">
-                <Image className="lg:w-[7vw] md:w-[9vw] sm:w-[10vw]" src={Logo} alt="logo" />
+                <Image className="lg:w-[7vw] md:w-[6vw] sm:w-[3vw]" src={Logo} alt="logo" />
               </a>
             </div>
             <span className="font-extrabold text-sm text-blue-500"></span>
