@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import Logo from "./../../public/Logo.png";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react"
+import Image from "next/image"
+import Logo from "./../../public/Logo.png"
+import LogoText from './../../public/LogoText.png'
+import { AnimatePresence, motion } from "framer-motion"
 
 // FlyerLink component with dropdown functionality
 const FlyerLink = ({ children, href, FlyerContent }) => {
@@ -21,7 +22,7 @@ const FlyerLink = ({ children, href, FlyerContent }) => {
           style={{
             transform: showFlyer ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
+          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-600 transition-transform duration-300 ease-out"
         />
       </a>
       <AnimatePresence>
@@ -49,26 +50,26 @@ const SubsystemsContent = () => {
   return (
     <div className="w-64 bg-black p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <a href="/Subsystems/ADCS" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
+        <a href="/subsystems/ADCS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
           ADCS
         </a>
-        <a href="/Subsystems/COMMS" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
+        <a href="/subsystems/COMMS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
           COMMS
         </a>
-        <a href="/Subsystems/EPS" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
+        <a href="/subsystems/EPS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
           EPS
         </a>
-        <a href="/Subsystems/ODHS" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
+        <a href="/subsystems/ODHS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
           ODHS
         </a>
-        <a href="Subsystems/PAYLOAD" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
+        <a href="/subsystems/PAYLOAD" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
           PAYLOAD
         </a>
-        <a href="Subsystems/STMS" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
+        <a href="/subsystems/STMS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
           STMS
         </a>
-        <a href="Subsystems/MANAGEMENT" className="block text-sm font-semibold text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out">
-          MANAGEMENT
+        <a href="/subsystems/Admin" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+          ADMIN
         </a>
       </div>
     </div>
@@ -88,33 +89,42 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <a href="/" className="text-white">
-                <Image className="w-[6vw]" src={Logo} alt="logo" />
+                <Image className="lg:w-[7vw] md:w-[9vw] sm:w-[10vw]" src={Logo} alt="logo" />
               </a>
             </div>
+            <span className="font-extrabold text-sm text-blue-500"></span>
+            {/* <Image className="relative w-[10vw]" src={LogoText} alt="logo text" /> */}
           </div>
           <div className="hidden md:block">
-            <div className="ml-4 flex items-center space-x-4">
+            <div className="ml-4 flex items-center space-x-4 text-lg">
               <FlyerLink href="/" FlyerContent={SubsystemsContent}>
                 Subsystems
               </FlyerLink>
               <a
-                href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
+                href="#Contact"
+                className="text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out"
               >
                 Contact Us
               </a>
-              <a
+              {/*<a
                 href="/"
-                className="text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
+                className="text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out"
               >
                 Join Us
               </a>
-              <a
+               <a
                 href="/"
                 className="text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
               >
                 Projects
+              </a> 
+              <a
+                href="/"
+                className="text-white hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
+              >
+                Team
               </a>
+              */}
             </div>
           </div>
           <div className="md:hidden flex items-center">
@@ -162,17 +172,33 @@ const Navbar = () => {
       {isClick && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 transition duration-300 ease-in-out">
-            <a
+              Subsystems:<br /><br />
+              <a href="/subsystems/ADCS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                ADCS
+              </a>
+              <a href="/subsystems/COMMS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                COMMS
+              </a>
+              <a href="/subsystems/EPS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                EPS
+              </a>
+              <a href="/subsystems/ODHS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                ODHS
+              </a>
+              <a href="/subsystems/PAYLOAD" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                PAYLOAD
+              </a>
+              <a href="/subsystems/STMS" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                STMS
+              </a>
+              <a href="/subsystems/Admin" className="block text-sm font-semibold text-white hover:bg-indigo-600 rounded-lg p-2 transition duration-300 ease-in-out">
+                ADMIN
+              </a>
+            {/* <a
               href="/"
               className="text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
             >
-              Subsystems
-            </a>
-            <a
-              href="/"
-              className="text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
-            >
-              Contact Us
+        
             </a>
             <a
               href="/"
@@ -185,7 +211,7 @@ const Navbar = () => {
               className="text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out"
             >
               Projects
-            </a>
+            </a> */}
           </div>
         </div>
       )}

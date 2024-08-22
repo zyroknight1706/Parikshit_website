@@ -1,98 +1,61 @@
 import React from 'react'
 
-export default function Cubesat() {
-    return (
-      <div className="relative overflow-hidden bg-black">
-        <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+const SatSummary = () => {
+  return (
+    <div className="relative overflow-hidden bg-black">
+        <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-20">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Summer styles are finally here
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                The Cubesat: <br />
               </h1>
-              <p className="mt-4 text-xl text-gray-500">
-                This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
-                if you live or die.
-              </p>
+                <ul className="mt-4 text-xl text-white font-bold">
+                  <li><span className='text-indigo-600'>Primary Payload: </span>Thermal Imaging Camera<br /><span className='text-indigo-600'>Secondary Payload: </span>Electrodynamic Tether<br /></li>
+                  <li><span className='text-indigo-600'>Dimensions:</span> 10x10x22.7 cm <br /></li>
+                  <li><span className='text-indigo-600'>Weight:</span> 2.3Kg<br /></li>
+                  <li><span className='text-indigo-600'>Altitude:</span> 500km (LEO) <br /></li>
+                  <li><span className='text-indigo-600'>Battery:</span> Li-ion 20Wh<br /></li>
+                  <li><span className='text-indigo-600'>Actuation System:</span> Reaction Wheel, Torquerods <br /></li>
+                  <li><span className='text-indigo-600'>Sensors:</span> Magnetometer, Gyro, Sun Sensors <br /></li>
+                </ul>
             </div>
             <div>
-              <div className="mt-10">
-                {/* Decorative image grid */}
-                <div
-                  aria-hidden="true"
-                  className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-                >
-                  <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                    <div className="flex items-center space-x-6 lg:space-x-8">
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                      </div>
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                      </div>
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            alt=""
-                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
+              <div
+                aria-hidden="true"
+                className="lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+              >
+                    <div className="absolute transform sm:left-1/2 sm:top-0 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 -translate-x-8">
+                      <div className="flex items-center space-x-6 lg:space-x-8">
+                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                          <div className="overflow-hidden sm:opacity-0 lg:opacity-100">
+                            <iframe className='pb-10' src="https://learner1850.autodesk360.com/shares/public/SH286ddQT78850c0d8a443b00bc700406c4c?mode=embed" width="800" height="600" allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true"  frameBorder="0"></iframe>
+                            {/* use Sketchfab later on when we have time https://sketchfab.com/blogs/enterprise/news/getting-started-with-sketchfab */}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-  
-                <a
-                  href="#"
-                  className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-                >
-                  Shop Collection
-                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+  )
+}
+
+// const SatModel = () => {
+//   return (
+//     <div className='items-center py-10'>
+//       <iframe className="items-center mx-auto" src="https://learner1850.autodesk360.com/shares/public/SH286ddQT78850c0d8a443b00bc700406c4c?mode=embed" width="100" height="100" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+//     </div>
+//   )
+// }
+
+export default function Cubesat() {
+    return (
+      <>
+        <SatSummary />
+        {/* <SatModel /> */}
+      </>
     )
   }
   
