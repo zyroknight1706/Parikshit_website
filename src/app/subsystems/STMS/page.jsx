@@ -22,7 +22,7 @@ const STMSHeroData = {
 
 const Quote = () => {
   return (
-    <i>The only CFD we haven't done, are of women...</i>
+    <i>Yes, we do mechanical engineering, no it's not cooler than cars....</i>
   )
 }
 

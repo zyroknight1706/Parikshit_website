@@ -15,7 +15,7 @@ const EPSHeroData = {
   readHREF: "#recruitments",
   whiteBg: true,
   mainTitle: "Electronics and Power Subsystem",
-  quote: '"Ground is our -... .. - -.-. ...."',
+  quote: '"Now I am Become Short, The Destroyer of Boards"',
   addAuth: false,
 }
 
