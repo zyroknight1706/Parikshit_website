@@ -12,9 +12,9 @@ export default function Hero({ Data }) {
         <div className="max-w-2xl md:py-0 lg:py-56">
           <div className="sm:mb-4 sm:text-sm sm:flex sm:justify-center">
             <div className={ Data.whiteBg ? (
-              "relative rounded-md md:py-1 text-[5px] font-bold leading-6 text-white bg-indigo-600 md:text-lg"
+              "relative rounded-md md:py-1 text-[20px] font-bold leading-6 text-white bg-indigo-600 md:text-lg"
               ) : (
-                "relative rounded-full px-3 md:py-1 text-[5px] font-bold leading-6 text-white bg-indigo-600 md:text-lg"
+                "relative rounded-full px-3 md:py-1 text-[20px] font-bold leading-6 text-white bg-indigo-600 md:text-lg"
               )}>
               Announcing our next round of recruitments.{' '}
               <a href={ Data.readHREF } className={ Data.whiteBg ? (
