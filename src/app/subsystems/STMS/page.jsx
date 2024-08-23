@@ -14,7 +14,7 @@ const STMSHeroData = {
   readHREF: "#recruitments",
   whiteBg: true,
   mainTitle: "Structures, Thermals and Mechanisms Subsystem",
-  quote: '"CLANK, CLANK, CLANK.... YAOOOOOWWW!!!"',
+  quote: '"CLANK, CLANK, CLANK, CRUNCH!.... YAOOOOOWWW!!!"',
   addAuth: false,
 }
 
