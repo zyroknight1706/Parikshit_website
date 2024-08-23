@@ -38,11 +38,11 @@ const LowerDesc = () => {
         <ol>
           <li>
             <span className='text-indigo-600 font-black text-xl'>Primary Payload: Thermal Imaging Camera</span><br /><br />
-            This camera will capture thermal Landsat images of India, processed through a blend of remote sensing techniques and AI-driven analysis. These images will provide valuable insights into environmental patterns, including climate data, urban heat islands, and cloud monitoring. (A looping GIF along this that transitions from a raw thermal Landsat image to a processed version using various image processing techniques.)
+            This camera will capture thermal Landsat images of India, processed through a blend of remote sensing techniques and AI-driven analysis. These images will provide valuable insights into environmental patterns, including climate data, urban heat islands, and cloud monitoring.
           </li><br /><br />
           <li>
             <span className='text-indigo-600 font-black text-xl'>Secondary Payload: Electrodynamic Tether</span><br /><br />
-            The electrodynamic tether will deorbit the satellite after the mission—something never tried before and potentially revolutionary in reducing space debris as well. (An animation will showcase the tether’s deployment and its effect on the satellite’s orbit.)
+            The electrodynamic tether will deorbit the satellite after the mission—something never tried before and potentially revolutionary in reducing space debris as well.
           </li>
         </ol>
       </div>
@@ -71,10 +71,10 @@ const PAYLOADChallengeQuestions = () => {
           <span className='text-indigo-600 text-2xl'>ML: Build a Neural Network</span><br /><br />
           <strong className='text-indigo-600'>Instruction</strong> - KITS19 is preferred and will be given more preference<br />
           <br />
-          Massachusetts Buildings Dataset. Min. accuracy - 0.9 or 90%<br />
+          Massachusetts Buildings Dataset.<br />
           <a href='https://www.kaggle.com/datasets/balraj98/massachusetts-buildings-dataset/data'>https://www.kaggle.com/datasets/balraj98/massachusetts-buildings-dataset/data</a><br />
           <br />
-          Kidney Tumor Segmentation or KITS-19. Min. accuracy - 0.9 or 90%<br /><br />
+          Kidney Tumor Segmentation or KITS-19.<br /><br />
         </li>
         <li>
           <span className='text-indigo-600 text-2xl'>Tether: </span><br /><br />
