@@ -28,9 +28,9 @@ export default function Hero({ Data }) {
           </div>
           <div className='text-left'>
             <h1 className={ Data.whiteBg ? (
-              "text-[20px] lg:text-6xl md:text-4xl font-bold tracking-tight rounded-xl bg-indigo-600 p-2 text-black"
+              "text-[25px] lg:text-6xl md:text-4xl font-bold tracking-tight rounded-xl bg-indigo-600 p-2 text-black"
             ) : (
-              "text-[20px] lg:text-6xl md:text-4xl font-bold tracking-tight pb-10 rounded-2xl text-white"
+              "text-[25px] lg:text-6xl md:text-4xl font-bold tracking-tight pb-10 rounded-2xl text-white"
             )}>
               { Data.mainTitle }
             </h1>
@@ -38,9 +38,9 @@ export default function Hero({ Data }) {
         </div>
       </div>
         {Data.isAdmin ? (null) : (<div className={Data.whiteBg ? (
-          "lg:pb-[5vh] lg:mb-[10vh] text-[10px] pb-4 mx-auto items-center text-center lg:text-3xl md:text-xl pt-[5vh] text-white bg-black bg-opacity-50 font-bold absolute w-full top-[65vh] flex flex-col"
+          "lg:pb-[5vh] lg:mb-[10vh] text-[20px] pb-4 mx-auto items-center text-center lg:text-3xl md:text-xl pt-[5vh] text-white bg-black bg-opacity-50 font-bold absolute w-full top-[65vh] flex flex-col"
           ) : (
-          "align-top lg:pb-[5vh] lg:mb-[10vh] text-[5px] mx-auto items-center text-center lg:text-3xl md:text-xl sm:text-lg pt-[5vh] text-white bg-black bg-opacity-50 font-bold absolute w-full top-[65vh] flex flex-col"
+          "align-top lg:pb-[5vh] lg:mb-[10vh] text-[20px] mx-auto items-center text-center lg:text-3xl md:text-xl sm:text-lg pt-[5vh] text-white bg-black bg-opacity-50 font-bold absolute w-full top-[65vh] flex flex-col"
           )}>
           { Data.quote }
           {Data.addAuth ? (
