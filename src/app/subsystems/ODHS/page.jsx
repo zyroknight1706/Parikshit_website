@@ -127,7 +127,7 @@ const ODHSChallengeQuestions = () => {
       The <strong className='text-indigo-600'>main tasks</strong> must be completed <strong className='text-indigo-600'>sequentially:</strong>
       <ol className='list-decimal'><br />
         <li>
-          In <strong className='text-indigo-600'>C </strong>(preferred), or <strong className='text-indigo-600'>Python </strong>(easier), write a <strong className='text-indigo-600'>master file handler</strong> that <strong className='text-indigo-600'>converts .tiff</strong> files into <strong className='text-indigo-600'>.csv</strong> files and vice versa.
+          In <strong className='text-indigo-600'>C </strong>(preferred), or <strong className='text-indigo-600'>Python </strong>(easier), write a <strong className='text-indigo-600'>master file handler</strong> that <strong className='text-indigo-600'>converts .tiff</strong> files into <strong className='text-indigo-600'>.csv</strong> files and vice versa. (example: <a href='https://drive.google.com/drive/folders/1-wj92b0WykasRfDXYGsJ_LgSQmOUPvxe?usp=sharing'>https://drive.google.com/drive/folders/1-wj92b0WykasRfDXYGsJ_LgSQmOUPvxe?usp=sharing</a>)
         </li><br />
         <li>
           In <strong className='text-indigo-600'>C</strong>, write a separate program that adds a <strong className='text-indigo-600'>parity bit</strong> row to a given <strong className='text-indigo-600'>.csv</strong> file, where the n<super>th</super> entry in the row corresponds to the parity bit of the n<super>th</super> column. Additionally, add the ability to perform a <strong className='text-indigo-600'>parity check</strong> on a given <strong className='text-indigo-600'>.csv</strong> file.<br />
