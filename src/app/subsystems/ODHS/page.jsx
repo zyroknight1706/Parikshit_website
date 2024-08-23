@@ -111,10 +111,10 @@ const ODHSChallengeContext = () => {
       <>
         <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span><br /><br />
         Raw data collected from sensors often needs to be processed on a satellite, and programming for such data handling on the satellite requires segmentation of the programs. This segmentation is required since the parameters of each program are very unique. A satellite contains many devices serving different purposes, and thus, many fundamental aspects of a program differ- type of data, data handling operations to be performed, the hardware devices involved, etc. In the tail end, all these programs must be brought together under the satellite’s operating system, while minimizing their footprint.
-        <br /><strong className='text-indigo-600'>
-        For this challenge, you must write a master program which handles files and add the following features in separate modules. The modules must return relevant process information/metadata to the master program. You must write documentation on how to use the master program and create a state diagram showing the interaction/flow between the master program and the modules. Mention error states as well.
-        </strong><br />
-        <u>Not all features need to be added for submission. Partial projects can be submitted regardless of progress.</u><br /><br />
+        <br /><br /><strong className='text-indigo-600'>
+        For this challenge, you must write a master program which handles files and add the following features in separate modules. The modules must return relevant process information/metadata to the master program.<br /> <u>You must write documentation on how to use the master program and create a state diagram showing the interaction/flow between the master program and the modules.</u> <br /><br />Mention error states as well.
+        </strong><br /><br />
+        <strong className='text-4xl'><u>Not all features need to be added for submission. Partial projects can be submitted regardless of progress.</u></strong><br /><br />
         {/* write where to submit the challenge question */}
       </>
   )

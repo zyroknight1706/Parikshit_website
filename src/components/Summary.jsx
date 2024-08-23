@@ -44,7 +44,7 @@ export default function Summary({ Data }) {
           <Image
             alt="Satellite photo"
             src={ Data.sideImg }
-            className="w-[48rem] lg:max-w-none sm:max-w-screen-sm rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            className="w-[48rem] relative left-10 lg:max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
           />
         </div>
         { Data.lowerDesc() }

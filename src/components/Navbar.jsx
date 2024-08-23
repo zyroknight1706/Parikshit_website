@@ -86,13 +86,13 @@ const Navbar = () => {
     <nav className="bg-black p-3">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="hidden lg:flex items-center">
             <div className="flex-shrink-0">
               <a href="/" className="text-white">
-                <Image className="lg:w-[7vw] md:w-[6vw] sm:w-[3vw]" src={Logo} alt="logo" />
+                <Image className="lg:w-[7vw] md:w-[6vw]" src={Logo} alt="logo" />
               </a>
             </div>
-            <span className="font-extrabold text-sm text-blue-500"></span>
+            {/* <span className="font-extrabold text-sm text-blue-500"></span> */}
             {/* <Image className="relative w-[10vw]" src={LogoText} alt="logo text" /> */}
           </div>
           <div className="hidden md:block">

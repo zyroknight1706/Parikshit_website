@@ -28,7 +28,7 @@ const SatSummary = () => {
                       <div className="flex items-center space-x-6 lg:space-x-8">
                         <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                           <div className="overflow-hidden sm:opacity-0 lg:opacity-100">
-                            <iframe className='pb-10' src="https://learner1850.autodesk360.com/shares/public/SH286ddQT78850c0d8a443b00bc700406c4c?mode=embed" width="800" height="600" allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true"  frameBorder="0"></iframe>
+                            <iframe className='pb-10 max-w-[103vw] max-h-[250vh]' src="https://learner1850.autodesk360.com/shares/public/SH286ddQT78850c0d8a443b00bc700406c4c?mode=embed" width="800" height="600" allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true"  frameBorder="0"></iframe>
                             {/* use Sketchfab later on when we have time https://sketchfab.com/blogs/enterprise/news/getting-started-with-sketchfab */}
                           </div>
                         </div>
@@ -42,19 +42,10 @@ const SatSummary = () => {
   )
 }
 
-// const SatModel = () => {
-//   return (
-//     <div className='items-center py-10'>
-//       <iframe className="items-center mx-auto" src="https://learner1850.autodesk360.com/shares/public/SH286ddQT78850c0d8a443b00bc700406c4c?mode=embed" width="100" height="100" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-//     </div>
-//   )
-// }
-
 export default function Cubesat() {
     return (
       <>
         <SatSummary />
-        {/* <SatModel /> */}
       </>
     )
   }
