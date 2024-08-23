@@ -28,9 +28,9 @@ export default function Hero({ Data }) {
           </div>
           <div className='text-left'>
             <h1 className={ Data.whiteBg ? (
-              "text-[10px] lg:text-6xl md:text-4xl font-bold tracking-tight rounded-xl bg-indigo-600 p-2 text-black"
+              "text-[20px] lg:text-6xl md:text-4xl font-bold tracking-tight rounded-xl bg-indigo-600 p-2 text-black"
             ) : (
-              "text-[15px] lg:text-6xl md:text-4xl font-bold tracking-tight pb-10 rounded-2xl text-white"
+              "text-[20px] lg:text-6xl md:text-4xl font-bold tracking-tight pb-10 rounded-2xl text-white"
             )}>
               { Data.mainTitle }
             </h1>
