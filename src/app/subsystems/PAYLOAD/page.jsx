@@ -1,9 +1,9 @@
-import React from 'react'
-import abc from "./bc.jpg"
-import Hero from '@/components/Hero'
-import Summary from '@/components/Summary'
-import Challenge from '@/components/Challenge'
-import SideImg from './SideImg.png'
+import React from 'react';
+import abc from "./bc.jpg";
+import Hero from '@/components/Hero';
+import Summary from '@/components/Summary';
+import Challenge from '@/components/Challenge';
+import SideImg from './SideImg.png';
 
 const PAYLOADHeroData = {
   bgImg: abc,
@@ -12,21 +12,21 @@ const PAYLOADHeroData = {
   mainTitle: "Payload Subsystem",
   quote: '"I am the One who Snaps!  "',
   addAuth: false,
-}
+};
 
 const Quote = () => {
   return (
     <i>The Predator ain't got shit on us...</i>
-  )
-}
+  );
+};
 
 const UpperDesc = () => {
   return (
     <p className="mt-6 text-xl leading-8 text-stone-200 font-black text-justify">
       Our satellite mission features two innovative <strong className='text-indigo-600'>Payloads</strong>: a thermal imaging camera and an electrodynamic tether, each designed to push the boundaries of space technology.
     </p>
-  )
-}
+  );
+};
 
 const LowerDesc = () => {
   return (
@@ -46,19 +46,19 @@ const LowerDesc = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const PAYLOADSummaryData = {
   quote: Quote,
   upperDesc: UpperDesc,
   sideImg: SideImg,
   lowerDesc: LowerDesc,
-}
+};
 
 const PAYLOADChallengeContext = () => {
-  return null
-}
+  return null;
+};
 
 const PAYLOADChallengeQuestions = () => {
   return (
@@ -144,13 +144,13 @@ const PAYLOADChallengeQuestions = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 const PAYLOADChallengeData = {
   challengeContext: PAYLOADChallengeContext,
   challengeQuestions: PAYLOADChallengeQuestions,
-}
+};
 
 const PAYLOAD = () => {
   return (
@@ -159,8 +159,7 @@ const PAYLOAD = () => {
       <Summary Data={PAYLOADSummaryData} />
       <Challenge Data={PAYLOADChallengeData} />
     </>
-  )
-}
+  );
+};
 
-export default PAYLOAD
-
+export default PAYLOAD;
