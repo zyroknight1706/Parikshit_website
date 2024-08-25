@@ -117,30 +117,30 @@ const PAYLOADChallengeQuestions = () => {
             <span className='text-indigo-600 text-2xl'>Tether: </span><br /><br />
             <strong className='text-indigo-600'>Instructions:</strong> Partial submissions are allowed and must be done through a hand-written document.<br /><br />
             <strong className='text-indigo-600 text-xl'>Question 1: Gravity Gradient Tug-of-War</strong><br /><br />
-            A *30 km* long *bare silver-coated tether* is deployed in orbit around a planet with a radius of *6000 km, orbiting at a height of **500 km* from the surface of the planet, with a gravitational acceleration of *9 m/s²* at the surface. The tether is oriented *radially* to the planet. The tether experiences a *gravity gradient force* that creates tension along its length. Suddenly, the planet’s *magnetic field reverses*.<br /><br />
+            A  30 km  long  bare silver-coated tether  is deployed in orbit around a planet with a radius of  6000 km, orbiting at a height of   500 km  from the surface of the planet, with a gravitational acceleration of  9 m/s²  at the surface. The tether is oriented  radially  to the planet. The tether experiences a  gravity gradient force  that creates tension along its length. Suddenly, the planet’s  magnetic field reverses .<br /><br />
             <strong className='text-indigo-600'>Questions: </strong>
             <ol className='list-inside list-decimal ps-5'>
-              <li>What happens to the tether after the *reversal of the magnetic field*?</li>
-              <li>How does the *gravity gradient force* act on different segments of the tether, and what is the resulting *tension* at different points along the tether? (*Math required*)</li>
-              <li>What effect does the *magnetic field reversal* have on the tether's *oscillation, and how does it interact with the **gravity gradient's force*?</li>
+              <li>What happens to the tether after the  reversal of the magnetic field ?</li>
+              <li>How does the  gravity gradient force  act on different segments of the tether, and what is the resulting  tension  at different points along the tether? ( Math required )</li>
+              <li>What effect does the  magnetic field reversal  have on the tether's  oscillation, and how does it interact with the   gravity gradient's force ?</li>
             </ol>
           </li>
           <li>
             <span className='text-indigo-600 text-2xl'>Electrodynamics in a Twisted Orbit</span><br /><br />
             <strong className='text-indigo-600'>Instructions:</strong> Partial submissions are allowed and must be done through a hand-written document.<br /><br />
             <strong className='text-indigo-600 text-xl'>Question 2: Electrodynamics in a Twisted Orbit</strong><br /><br />
-            A *bare tether system* is deployed in a *low orbit* around a planet with a *highly elliptical orbit. The tether, which is **3 km long, is made of **copper* and is aligned along the *major axis* of the orbit. The tether experiences *electrodynamic drag* due to its interaction with the planet’s *magnetic field. The space station to which the tether is attached starts experiencing **abnormal oscillations* due to the *uneven magnetic field* caused by the planet’s *non-uniform shape*.<br /><br />
+            A  bare tether system  is deployed in a low orbit around a planet with a highly elliptical orbit. The tether, which is 3 km long, is made of copper and is aligned along the  major axis  of the orbit. The tether experiences  electrodynamic drag  due to its interaction with the planet’s  magnetic field. The space station to which the tether is attached starts experiencing   abnormal oscillations  due to the  uneven magnetic field  caused by the planet’s  non-uniform shape .<br /><br />
             <ol className='list-decimal list-inside ps-5'>
-              <li>How do the *oscillations* of the space station affect the *tether's current? (Math required*)</li>
-              <li>What is the impact of reducing the *tether's resistance by 50%* while the station is in motion, and how will this affect the *induced current*?</li>
-              <li>Assume the space station is equipped with a device that can *manipulate the tether's length. If the tether is shortened to **2 km, how does this affect the overall **system dynamics, considering the **black hole's gravitational pull*?</li>
+              <li>How do the oscillations of the space station affect the tether's current? (Math required )</li>
+              <li>What is the impact of reducing the  tether's resistance by 50%  while the station is in motion, and how will this affect the  induced current ?</li>
+              <li>Assume the space station is equipped with a device that can  manipulate the tether's length. If the tether is shortened to   2 km, how does this affect the overall   system dynamics, considering the   black hole's gravitational pull ?</li>
             </ol>
           </li>
         </ol>
         <div className="text-center mt-16">
           <span className='text-indigo-600 text-2xl'>Bonus Question:</span><br /><br />
           <strong className='text-indigo-600 text-xl'>Short MATLAB Task: Simulating Orbital Decay After Tether Deployment</strong><br /><br />
-          Create a *MATLAB script* to simulate the *orbital decay* of a satellite in *low Earth orbit* at an initial altitude of *500 km* after deploying a *1 km long conductive bare tether. The simulation should model the **orbital dynamics* after tether deployment.
+          Create a  MATLAB script  to simulate the  orbital decay  of a satellite in  low Earth orbit  at an initial altitude of  500 km  after deploying a  1 km long conductive bare tether. The simulation should model the   orbital dynamics  after tether deployment.
         </div>
       </div>
     </>
@@ -163,3 +163,4 @@ const PAYLOAD = () => {
 }
 
 export default PAYLOAD
+
