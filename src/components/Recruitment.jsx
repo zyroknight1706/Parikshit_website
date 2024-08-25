@@ -13,7 +13,7 @@ const posts = [
         href: '/subsystems/COMMS',
         description:
           'The Communications and Ground Station Subsystem or COMMS is responsible for the team to establish a communication link between the Ground Station and the Satellite. The subsystem deals with making RF modules, building antennae, data processing and tracking satellites from PAGOS. The main motto is to design the system in such a way that there always exists a strong link with minimal interference.',
-        category: { title: 'Communications and RF' },
+        category: { title: 'RF Electronics, Electromagnetics and Communications' },
     },
     {
         id: 3,
