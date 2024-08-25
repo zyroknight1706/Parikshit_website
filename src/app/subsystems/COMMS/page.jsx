@@ -1,10 +1,11 @@
-import Hero from '@/components/Hero';
 import React from 'react';
-import bg from './bg.jpeg';
+import Hero from '@/components/Hero';
 import Summary from '@/components/Summary';
 import Challenge from '@/components/Challenge';
-import SideImg from './SideImg.jpeg'
+import bg from './bg.jpeg';
+import SideImg from './SideImg.jpeg';
 
+// Hero Section Data
 const COMMSHeroData = {
   bgImg: bg,
   readHREF: "#recruitments",
@@ -12,80 +13,80 @@ const COMMSHeroData = {
   mainTitle: "Communications and Ground Station Subsystem",
   quote: '"Tune down the noises and strengthen your signal"',
   addAuth: false,
-}
+};
 
-const Quote = () => {
-  return (
-    <i>Houston...</i>
-  )
-}
+// Quote Component
+const Quote = () => (
+  <i>Houston...</i>
+);
 
-const UpperDesc = () => {
-  return (
-    <p className="mt-6 text-xl leading-8 text-stone-200 font-black">
-        The <span className='text-indigo-600'>Communications and Ground Station Subsystem or COMMS</span> is responsible for the team to establish a communication link between the Ground Station and the Satellite. The subsystem deals with making RF modules, building antennae, data processing and tracking satellites from PAGOS. The main motto is to design the system in such a way that there always exists a strong link with minimal interference.
-    </p>
-  )
-}
+// Upper Description Component
+const UpperDesc = () => (
+  <p className="mt-6 text-xl leading-8 text-stone-200 font-black text-justify">
+    The <span className='text-indigo-600'>Communications and Ground Station Subsystem or COMMS</span> is responsible for the team to establish a communication link between the Ground Station and the Satellite. The subsystem deals with making RF modules, building antennae, data processing, and tracking satellites from PAGOS. The main motto is to design the system in such a way that there always exists a strong link with minimal interference.
+  </p>
+);
 
-const LowerDesc = () => {
-  return null
-}
+// Lower Description Component (Empty for now)
+const LowerDesc = () => null;
 
+// Summary Section Data
 const COMMSSummaryData = {
   quote: Quote,
   upperDesc: UpperDesc,
   sideImg: SideImg,
   lowerDesc: LowerDesc,
-}
+};
 
-const COMMSChallengeContext = () => {
-  return null
-}
+// Challenge Context Component (Empty for now)
+const COMMSChallengeContext = () => null;
 
-const COMMSChallengeQuestions = () => {
-  return (
-    <>
-      <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Questions: </span><br /><br />
-      <ol className='list-decimal'>
-        <li>
-          <strong className='text-indigo-600'>
-            Design a communication system for a communication link to be established between PAGOS (Parikshit Ground Station) and the cubesat orbiting at an altitude of 500 km (LEO).
-            <br /><br />
-            The following are the basic goals which we require you to complete:
-          </strong>
-          <ul className='list-inside list-disc ps-10'>
-            <li>Know the basic RF components required for a communication system.</li>
-            <li>Get versed with the different terms associated with a RF link Budget.</li>
-            <li>Choose an appropriate carrier frequency, modulation technique, bandwidth and bit rate required for the data transmission.</li>
-            <li>Also try to understand the format of the data flow in order to receive your(message/information) in PAGOS from a satellite.</li>
-            <li>Choose an appropriate Transceiver for both cubesat and PAGOS.</li>
-            <li>Explore different types of antenna and find an appropriate one for the PAGOS and the cubesat by considering the appropriate parameters.</li>
-            <li>Make an RF Link Budget.</li>
-          </ul>
-          <br />
-          <br />
-          <i className='text-indigo-600'>The scores will be based on how many goals you have accomplished and the justifications you give for it.</i><br /><br />
-        </li>
-        <li>
-          <strong className='text-indigo-600'>Design an RF Transmitter or RF Receiver architecture.</strong><br /><br />
-        </li>
-      </ol>
-    </>
-  )
-}
+// Challenge Questions Component
+const COMMSChallengeQuestions = () => (
+  <div className="text-justify">
+    <span className='text-indigo-600 font-bold text-center text-3xl'>Questions:</span>
+    <br /><br />
+    <ol className='list-decimal'>
+      <li>
+        <strong className='text-indigo-600'>
+          Design a communication system for a communication link to be established between PAGOS (Parikshit Ground Station) and the cubesat orbiting at an altitude of 500 km (LEO).
+          <br /><br />
+          The following are the basic goals which we require you to complete:
+        </strong>
+        <ul className='list-inside list-disc ps-10'>
+          <li>Know the basic RF components required for a communication system.</li>
+          <li>Get versed with the different terms associated with a RF link Budget.</li>
+          <li>Choose an appropriate carrier frequency, modulation technique, bandwidth, and bit rate required for the data transmission.</li>
+          <li>Understand the format of the data flow in order to receive your message/information in PAGOS from a satellite.</li>
+          <li>Choose an appropriate Transceiver for both cubesat and PAGOS.</li>
+          <li>Explore different types of antenna and find an appropriate one for PAGOS and the cubesat by considering the appropriate parameters.</li>
+          <li>Make an RF Link Budget.</li>
+        </ul>
+        <br />
+        <i className='text-indigo-600'>The scores will be based on how many goals you have accomplished and the justifications you give for it.</i>
+        <br /><br />
+      </li>
+      <li>
+        <strong className='text-indigo-600'>Design an RF Transmitter or RF Receiver architecture.</strong>
+        <br /><br />
+      </li>
+    </ol>
+  </div>
+);
 
+// Challenge Section Data
 const COMMSChallengeData = {
   challengeContext: COMMSChallengeContext,
   challengeQuestions: COMMSChallengeQuestions,
-}
+};
 
+// Main COMMS Component
 export default function COMMS() {
   return (
     <>
-      <Hero Data={ COMMSHeroData } />
-      <Summary Data={ COMMSSummaryData } />
-      <Challenge Data={ COMMSChallengeData } />
+      <Hero Data={COMMSHeroData} />
+      <Summary Data={COMMSSummaryData} />
+      <Challenge Data={COMMSChallengeData} />
     </>
-  )
+  );
 }

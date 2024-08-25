@@ -37,7 +37,7 @@ const posts = [
         href: '/subsystems/PAYLOAD',
         description:
           'Our satellite mission features two innovative Payloads: a thermal imaging camera and an electrodynamic tether, each designed to push the boundaries of space technology.',
-        category: { title: 'Image Processing and AI/ML' },
+        category: { title: 'Image Processing, AI, and Plasma Physics' },
     },
     {
         id: 6,
