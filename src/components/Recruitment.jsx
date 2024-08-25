@@ -29,7 +29,7 @@ const posts = [
         href: '/subsystems/ODHS',
         description:
           'The On-Board Data Handling Subsystem (ODHS) is a critical component of satellite systems, designed to ensure the seamless and orderly functioning of all satellite parts. It plays a vital role in managing the flow of data, maintaining communications, and ensuring the satellite operates smoothly throughout its mission.',
-        category: { title: 'Embedded Systems' },
+        category: { title: 'Firmware,operating system and embedded system' },
     },
     {
         id: 5,
