@@ -151,13 +151,7 @@ const PAYLOADChallengeQuestions = () => {
           Create a  MATLAB script  to simulate the  orbital decay  of a satellite in  low Earth orbit  at an initial altitude of  500 km  after deploying a  1 km long conductive bare tether. The simulation should model the   orbital dynamics  after tether deployment.
         </div>
 
-        <div className="text-center mt-16">
-        <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
-        <strong className='text-indigo-600 text-xl'>
-        The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
-        </strong><br /><br />
-        </div>
-
+        
 
 
       </div>
