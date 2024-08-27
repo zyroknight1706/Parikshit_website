@@ -73,6 +73,13 @@ const EPSChallengeContext = () => {
 const EPSChallengeQuestions = () => {
   return (
     <div className="text-justify">
+      <div className="text-center mt-16">
+  <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
+  <strong className='text-indigo-600 text-xl'>
+    The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
+  </strong><br /><br />
+</div>
+
       <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>
         Questions:
       </span>

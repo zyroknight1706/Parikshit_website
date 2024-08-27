@@ -116,6 +116,13 @@ const ODHSSummaryData = {
 const ODHSChallengeContext = () => {
   return (
     <div className="text-justify">
+      <div className="text-center mt-16">
+  <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
+  <strong className='text-indigo-600 text-xl'>
+    The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
+  </strong><br /><br />
+</div>
+
       <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span>
       <br /><br />
       Raw data collected from sensors often needs to be processed on a satellite, and programming for such data handling on the satellite requires segmentation of the programs. This segmentation is required since the parameters of each program are very unique. A satellite contains many devices serving different purposes, and thus, many fundamental aspects of a program differ—type of data, data handling operations to be performed, the hardware devices involved, etc. In the tail end, all these programs must be brought together under the satellite’s operating system, while minimizing their footprint.

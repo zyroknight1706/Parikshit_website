@@ -65,18 +65,31 @@ const AdminSummaryData = {
 
 const AdminChallengeContext = () => {
   return (
-    <div className='text-white max-w-7xl text-2xl mx-auto items-center text-justify'>
-      <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span><br /><br />
-      <i>The Systems and Administration subsystem of Parikshit handles various non-technical yet crucial aspects to ensure the smooth functioning and visibility of the project. Your solutions should reflect the multifaceted nature of the management subsystem, considering web development, posts, and video editing. Each solution should be realistic, creative, and efficient. You can solve one or all of the below questions.</i>
-      <br /><br /><span className='text-indigo-600 font-black text-2xl'>Instructions for Submission: </span><br /><br />
-      <ol className='list-decimal text-justify'>
-        <li>Submit your work to the following email id</li>
-        <li>Send the links of the respective tasks. If you have made a git repository for the web dev task, do send the link.</li>
-        <li>You are free to use any software for tasks b and c.</li>
-      </ol>
-    </div>
+    <>
+      <div className="text-center mt-16">
+        <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
+        <strong className='text-indigo-600 text-xl'>
+          The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
+        </strong><br /><br />
+      </div>
+
+      <div className='text-white max-w-7xl text-2xl mx-auto items-center text-justify'>
+        <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span><br /><br />
+        <i>
+          The Systems and Administration subsystem of Parikshit handles various non-technical yet crucial aspects to ensure the smooth functioning and visibility of the project. Your solutions should reflect the multifaceted nature of the management subsystem, considering web development, posts, and video editing. Each solution should be realistic, creative, and efficient. You can solve one or all of the below questions.
+        </i>
+        <br /><br />
+        <span className='text-indigo-600 font-black text-2xl'>Instructions for Submission: </span><br /><br />
+        <ol className='list-decimal text-justify'>
+          <li>Submit your work to the following email id</li>
+          <li>Send the links of the respective tasks. If you have made a git repository for the web dev task, do send the link.</li>
+          <li>You are free to use any software for tasks b and c.</li>
+        </ol>
+      </div>
+    </>
   )
 }
+
 
 const AdminChallengeQuestions = () => {
   return (

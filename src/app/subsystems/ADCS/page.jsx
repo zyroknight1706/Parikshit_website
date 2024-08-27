@@ -64,6 +64,13 @@ const ADCSSummaryData = {
 const ADCSChallengeContext = () => {
   return (
     <>
+    <div className="text-center mt-16">
+  <span className='text-indigo-600 text-2xl'>Hurry Up ! </span><br /><br />
+  <strong className='text-indigo-600 text-xl'>
+    The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
+  </strong><br /><br />
+</div>
+<br/>
       <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span><br /><br />
       Our satellite orbits at an altitude of around <strong className='text-indigo-600'>500 Km</strong> from the surface of the Earth. <br />
       The satellite is completely autonomous, meaning, the satellite has to perceive itself (<strong className='text-indigo-600'>i.e., its own position, velocity with respect to both the Earth, other celestial bodies, and its own body frame</strong>) and this perception is aided by the onboard set of sensors. <br />
@@ -149,7 +156,13 @@ const ADCSChallengeQuestions = () => {
       <br />
       <br />
       <i><strong>Bonus Question - While traditionally 4 reaction wheels are used in most Cubesats as a momentum transfer mechanism, come up with a single reaction wheel-based controller (we need the transfer function) that works in tandem with magnetic actuators.</strong></i>
+      
+      
+    
+    
     </>
+
+
   );
 };
 

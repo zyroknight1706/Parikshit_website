@@ -67,6 +67,13 @@ const posts = [
               Learn about all our subsystems, and then click to know more about the subsystem that you're interested in and their Recruitment Challenge.
             </p>
           </div>
+          <div className="text-center mt-16">
+  <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
+  <strong className='text-indigo-600 text-xl'>
+    The last submission for the recruitment challenge will be accepted on 11<sup>th</sup> September 11:59 pm
+  </strong><br /><br />
+</div>
+
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t-2 border-indigo-600 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
               <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">

@@ -44,6 +44,13 @@ const COMMSChallengeContext = () => null;
 // Challenge Questions Component
 const COMMSChallengeQuestions = () => (
   <div className="text-justify">
+    <div className="text-center mt-16">
+  <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
+  <strong className='text-indigo-600 text-xl'>
+    The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
+  </strong><br /><br />
+</div>
+
     <span className='text-indigo-600 font-bold text-center text-3xl'>Questions:</span>
     <br /><br />
     <ol className='list-decimal'>
