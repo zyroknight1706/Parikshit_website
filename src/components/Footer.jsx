@@ -46,7 +46,7 @@ const Footer = () => {
             Copyright <strong><span>Parikshit Student Satellite</span></strong> 2024. All Rights Reserved.
           </div>
           <div className='text-center'>
-            Designed by <a href='https://www.instagram.com/zyroknight_1706/'>Atulya Mishra 😎</a>
+            Designed by <a href='https://www.instagram.com/zyroknight_1706/'>Atulya Mishra 😎 | Siddhartha Chhauda 🥃</a>
           </div>
         </div>
       </div>

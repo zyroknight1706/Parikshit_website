@@ -141,7 +141,7 @@ const PAYLOADChallengeQuestions = () => {
             <ol className='list-decimal list-inside ps-5'>
               <li>How do the oscillations of the space station affect the tether's current? (Math required )</li>
               <li>What is the impact of reducing the  tether's resistance by 50%  while the station is in motion, and how will this affect the  induced current ?</li>
-              <li>Assume the space station is equipped with a device that can  manipulate the tether's length. If the tether is shortened to   2 km, how does this affect the overall   system dynamics, considering the   black hole's gravitational pull ?</li>
+              
             </ol>
           </li>
         </ol>
