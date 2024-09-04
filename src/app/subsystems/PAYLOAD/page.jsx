@@ -36,7 +36,7 @@ const LowerDesc = () => {
           <ol className="space-y-8">
             <li>
               <span className='text-indigo-600 font-black text-xl'>Primary Payload: Thermal Imaging Camera</span><br /><br />
-              This camera will capture thermal Landsat images of India, processed through a blend of remote sensing techniques and AI-driven analysis. These images will provide valuable insights into environmental patterns, including climate data, urban heat islands, and cloud monitoring.
+              This camera will capture thermal Landsat images of Manipal, processed through a blend of remote sensing techniques and AI-driven analysis. These images will provide valuable insights into environmental patterns, including climate data, urban heat islands, and cloud monitoring.
             </li>
             <li>
               <span className='text-indigo-600 font-black text-xl'>Secondary Payload: Electrodynamic Tether</span><br /><br />
