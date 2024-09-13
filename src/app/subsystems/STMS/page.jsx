@@ -49,7 +49,7 @@ const STMSSummaryData = {
   sideImg: SideImg,
   lowerDesc: LowerDesc,
 };
-
+/*
 // Challenge Context Component (Empty for now)
 const STMSChallengeContext = () => null;
 
@@ -101,19 +101,14 @@ const STMSChallengeQuestions = () => (
     </ul>
   </div>
 );
-
-// Challenge Section Data
-const STMSChallengeData = {
-  challengeContext: STMSChallengeContext,
-  challengeQuestions: STMSChallengeQuestions,
-};
+*/
 
 // Main STMS Component
 const STMS = () => (
   <>
     <Hero Data={STMSHeroData} />
     <Summary Data={STMSSummaryData} />
-    <Challenge Data={STMSChallengeData} />
+
   </>
 );
 
