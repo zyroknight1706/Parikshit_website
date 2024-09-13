@@ -62,7 +62,7 @@ const AdminSummaryData = {
   sideImg: SideImg,
   lowerDesc: LowerDesc,
 }
-
+/*
 const AdminChallengeContext = () => {
   return (
     <>
@@ -122,19 +122,16 @@ const AdminChallengeQuestions = () => {
       </ul>
     </>
   )
-}
+} */
 
-const AdminChallengeData = {
-  challengeContext: AdminChallengeContext,
-  challengeQuestions: AdminChallengeQuestions,
-}
+
 
 export default function Administration() {
   return (
     <>
       <Hero Data={AdminHeroData} />
       <Summary Data={AdminSummaryData} />
-      <Challenge Data={AdminChallengeData} />
+
     </>
   );
 }

@@ -113,110 +113,14 @@ const ODHSSummaryData = {
   lowerDesc: LowerDesc,
 };
 
-const ODHSChallengeContext = () => {
-  return (
-    <div className="text-justify">
-      <div className="text-center mt-16">
-  <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
-  <strong className='text-indigo-600 text-xl'>
-    The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
-  </strong><br /><br />
-</div>
 
-      <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span>
-      <br /><br />
-      Raw data collected from sensors often needs to be processed on a satellite, and programming for such data handling on the satellite requires segmentation of the programs. This segmentation is required since the parameters of each program are very unique. A satellite contains many devices serving different purposes, and thus, many fundamental aspects of a program differ—type of data, data handling operations to be performed, the hardware devices involved, etc. In the tail end, all these programs must be brought together under the satellite’s operating system, while minimizing their footprint.
-      <br /><br />
-      <strong className='text-indigo-600'>
-        For this challenge, you must write a master program which handles files and add the following features in separate modules. The modules must return relevant process information/metadata to the master program.<br />
-        <u>You must write documentation on how to use the master program and create a state diagram showing the interaction/flow between the master program and the modules.</u><br /><br />
-        Mention error states as well.
-      </strong>
-      <br /><br />
-      <strong className='text-4xl'>
-        <u>Not all features need to be added for submission. Partial projects can be submitted regardless of progress.</u>
-      </strong>
-      <br /><br />
-      {/* write where to submit the challenge question */}
-    </div>
-  );
-};
-
-const ODHSChallengeQuestions = () => {
-  return (
-    <div className="text-justify">
-      <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Questions: </span>
-      <br /><br />
-      The <strong className='text-indigo-600'>main tasks</strong> must be completed <strong className='text-indigo-600'>sequentially:</strong>
-      <ol className='list-decimal'>
-        <br />
-        <li>
-          In <strong className='text-indigo-600'>C </strong>(preferred), or <strong className='text-indigo-600'>Python </strong>(easier), write a <strong className='text-indigo-600'>master file handler</strong> that <strong className='text-indigo-600'>converts .tiff</strong> files into <strong className='text-indigo-600'>.csv</strong> files and vice versa. (example: <a href='https://drive.google.com/drive/folders/1-wj92b0WykasRfDXYGsJ_LgSQmOUPvxe?usp=sharing' className='text-indigo-600 underline hover:text-white'>https://drive.google.com/drive/folders/1-wj92b0WykasRfDXYGsJ_LgSQmOUPvxe?usp=sharing</a>)
-        </li>
-        <br />
-        <li>
-          In <strong className='text-indigo-600'>C</strong>, write a separate program that adds a <strong className='text-indigo-600'>parity bit</strong> row to a given <strong className='text-indigo-600'>.csv</strong> file, where the n<super>th</super> entry in the row corresponds to the parity bit of the n<super>th</super> column. Additionally, add the ability to perform a <strong className='text-indigo-600'>parity check</strong> on a given <strong className='text-indigo-600'>.csv</strong> file.<br />
-          In the <strong className='text-indigo-600'>file handler</strong>, add the functionality to run the <strong className='text-indigo-600'>parity bit addition</strong>, or the <strong className='text-indigo-600'>parity check</strong>, program on a <strong className='text-indigo-600'>.csv</strong> file, specifying the type of parity.
-        </li>
-        <br />
-        <li>
-          In <strong className='text-indigo-600'>C</strong>, write a separate program that performs a <strong className='text-indigo-600'>blurring</strong> average using a given <strong className='text-indigo-600'>weightage</strong> on a given <strong className='text-indigo-600'>.csv</strong> file. Write another separate program that generates a <strong className='text-indigo-600'>weightage</strong> using a <strong className='text-indigo-600'>weighting function</strong> given a size <strong className='text-indigo-600'>n</strong><br />
-          In the <strong className='text-indigo-600'>file handler</strong>, add the functionality to run the <strong className='text-indigo-600'>blur</strong> programs on a <strong className='text-indigo-600'>.csv</strong> file, specifying the size. The <strong className='text-indigo-600'>weighting</strong> module and the <strong className='text-indigo-600'>blurring</strong> module should be used together.
-        </li>
-        <br />
-        <li>
-          In <strong className='text-indigo-600'>C</strong>, write a separate program that <strong className='text-indigo-600'>sorts</strong> all the rows of a given <strong className='text-indigo-600'>.csv</strong> in ascending or descending order. Use a <strong className='text-indigo-600'>suitable sorting algorithm</strong> based on metrics such as memory usage, time duration, no. of swaps, etc.<br />
-          In the <strong className='text-indigo-600'>file handler</strong>, add the functionality to run the <strong className='text-indigo-600'>sorting algorithm</strong> program, specifying the order.
-        </li>
-        <br />
-        <li>
-          In <strong className='text-indigo-600'>any compiled language</strong>, such as <strong className='text-indigo-600'>C</strong>, write a separate program that filters a <strong className='text-indigo-600'>.csv</strong> using the original <strong className='text-indigo-600'>Kuwahara filter</strong> set to a size <strong className='text-indigo-600'>n</strong> and outputs the result in another <strong className='text-indigo-600'>.csv</strong> file without changing the original <strong className='text-indigo-600'>.csv</strong>.<br />
-          In the <strong className='text-indigo-600'>file handler</strong>, add the functionality to run the <strong className='text-indigo-600'>filter</strong> program on a <strong className='text-indigo-600'>.csv</strong> file, specifying the size and the name of the generated <strong className='text-indigo-600'>.csv</strong> file.
-        </li>
-      </ol>
-      <br /><br />
-      <u>You can also attempt these <strong className='text-indigo-600'>supplemental tasks</strong> in any order (<strong className='text-indigo-600'>non-sequential</strong>), as long as the relevant <strong className='text-indigo-600'>main task</strong> has been completed:</u>
-      <br /><br />
-      <ul className='list-disc'>
-        <li>
-          Add support for other image formats, such as <strong className='text-indigo-600'>.png</strong>, in the conversion. <strong className='text-indigo-600'>[Main task A]</strong>
-        </li>
-        <br />
-        <li>
-          Add a <strong className='text-indigo-600'>log</strong> of changes and tasks performed in a <strong className='text-indigo-600'>XLCS or Excel</strong> file maintained by the <strong className='text-indigo-600'>file handler. [Main task A]</strong>
-        </li>
-        <br />
-        <li>
-          Add the ability to choose and execute other types of <strong className='text-indigo-600'>blurs. [Main task C]</strong>
-        </li>
-        <br />
-        <li>
-          Add the ability to sort <strong className='text-indigo-600'>n</strong> no. of rows together as one. <strong className='text-indigo-600'>[Main task D]</strong>
-        </li>
-        <br />
-        <li>
-          Add the ability to automatically select between additional sorting algorithms based on size of data. <strong className='text-indigo-600'>[Main Task D]</strong>
-        </li>
-        <br />
-        <li>
-          Add the ability to choose and execute other variants of the <strong className='text-indigo-600'>Kuwahara filter</strong> on the <strong className='text-indigo-600'>.csv</strong> file. <strong className='text-indigo-600'>[Main task E]</strong>
-        </li>
-      </ul>
-    </div>
-  );
-};
-
-const ODHSChallengeData = {
-  challengeContext: ODHSChallengeContext,
-  challengeQuestions: ODHSChallengeQuestions,
-};
 
 const ODHS = () => {
   return (
     <>
       <Hero Data={ODHSHeroData} />
       <Summary Data={ODHSSummaryData} />
-      <Challenge Data={ODHSChallengeData} />
+      
     </>
   );
 };

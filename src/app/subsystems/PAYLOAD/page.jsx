@@ -60,7 +60,7 @@ const PAYLOADChallengeContext = () => {
   return null;
 };
 
-const PAYLOADChallengeQuestions = () => {
+/*const PAYLOADChallengeQuestions = () => {
   return (
     <>
       <div className="text-center mb-10">
@@ -157,19 +157,15 @@ const PAYLOADChallengeQuestions = () => {
       </div>
     </>
   );
-};
+};*/
 
-const PAYLOADChallengeData = {
-  challengeContext: PAYLOADChallengeContext,
-  challengeQuestions: PAYLOADChallengeQuestions,
-};
 
 const PAYLOAD = () => {
   return (
     <>
       <Hero Data={PAYLOADHeroData} />
       <Summary Data={PAYLOADSummaryData} />
-      <Challenge Data={PAYLOADChallengeData} />
+
     </>
   );
 };

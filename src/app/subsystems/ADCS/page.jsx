@@ -60,7 +60,7 @@ const ADCSSummaryData = {
   sideImg: SideImg,
   lowerDesc: LowerDesc,
 };
-
+/*
 const ADCSChallengeContext = () => {
   return (
     <>
@@ -164,19 +164,16 @@ const ADCSChallengeQuestions = () => {
 
 
   );
-};
+}; */
 
-const ADCSChallengeData = {
-  challengeContext: ADCSChallengeContext,
-  challengeQuestions: ADCSChallengeQuestions,
-};
+
 
 const ADCS = () => {
   return (
     <>
       <Hero Data={ADCSHeroData} />
       <Summary Data={ADCSSummaryData} />
-      <Challenge Data={ADCSChallengeData} />
+   
     </>
   );
 };

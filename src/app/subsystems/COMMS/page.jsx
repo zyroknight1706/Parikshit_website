@@ -42,7 +42,7 @@ const COMMSSummaryData = {
 const COMMSChallengeContext = () => null;
 
 // Challenge Questions Component
-const COMMSChallengeQuestions = () => (
+/*const COMMSChallengeQuestions = () => (
   <div className="text-justify">
     <div className="text-center mt-16">
   <span className='text-indigo-600 text-2xl'>Hurry Up! </span><br /><br />
@@ -79,13 +79,10 @@ const COMMSChallengeQuestions = () => (
       </li>
     </ol>
   </div>
-);
+); */
 
 // Challenge Section Data
-const COMMSChallengeData = {
-  challengeContext: COMMSChallengeContext,
-  challengeQuestions: COMMSChallengeQuestions,
-};
+
 
 // Main COMMS Component
 export default function COMMS() {
@@ -93,7 +90,7 @@ export default function COMMS() {
     <>
       <Hero Data={COMMSHeroData} />
       <Summary Data={COMMSSummaryData} />
-      <Challenge Data={COMMSChallengeData} />
+      
     </>
   );
 }
