@@ -8,7 +8,7 @@ const teamMembers = [
     role: 'System Engineer',
     image: '/timages/image14.jpg',
     //github: 'https://github.com/arnavmarwaha',
-    linkedin: 'https://www.linkedin.com/in/arnavmarwaha/',
+    linkedin: 'https://www.linkedin.com/in/arnavmarwaha',
   },
   {
     name: 'Srishti Singh',
