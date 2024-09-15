@@ -64,83 +64,14 @@ const AdminSummaryData = {
   lowerDesc: LowerDesc,
 }
 
-const AdminChallengeContext = () => {
-  return (
-    <>
-      <div className="text-center mt-16">
-        <span className='bg-indigo-100 text-indigo-600 text-2xl font-bold py-2 px-4 rounded-lg'>
-          Hurry Up!
-        </span>
-        <br /><br />
-        <strong className='bg-indigo-50 text-indigo-800 text-xl font-semibold py-2 px-4 rounded-lg'>
-          The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
-        </strong>
-        <br /><br />
-      </div>
 
-
-      <div className='text-white max-w-7xl text-2xl mx-auto items-center text-justify'>
-        <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Context: </span><br /><br />
-        <i>
-          The Systems and Administration subsystem of Parikshit handles various non-technical yet crucial aspects to ensure the smooth functioning and visibility of the project. Your solutions should reflect the multifaceted nature of the management subsystem, considering web development, posts, and video editing. Each solution should be realistic, creative, and efficient. You can solve one or all of the below questions.
-        </i>
-        <br /><br />
-        <span className='text-indigo-600 font-black text-2xl'>Instructions for Submission: </span><br /><br />
-        <ol className='list-decimal text-justify'>
-          <li>Submit your work to the following email id</li>
-          <li>Send the links of the respective tasks. If you have made a git repository for the web dev task, do send the link.</li>
-          <li>You are free to use any software for tasks b and c.</li>
-        </ol>
-      </div>
-    </>
-  )
-}
-
-
-const AdminChallengeQuestions = () => {
-  return (
-    <>
-      <span className='text-indigo-600 font-bold align-middle text-center text-3xl'>Questions: </span><br /><br />
-      <ul className='list-disc text-justify'>
-        <li>
-          <strong className='text-indigo-600'>Create a functional and user-friendly website to manage and showcase the activities of a project that you have worked on/Parikshit. The website should feature:</strong>
-          <ul className='list-inside list-disc ps-10'>
-            <li>Homepage</li>
-            <li>Latest News</li>
-            <li>Navigation Menu</li>
-            <li>About Us section with project details</li>
-            <li>Team Profiles</li>
-            <li>A public engagement section with mission details, events, and contact form</li>
-          </ul><br />
-          <strong className='text-indigo-600'>Optional: </strong>database integration for data storage and management, a team collaboration section with discussion forums, document sharing, and meeting scheduler.
-          <br />
-          <br />
-          <i className='text-indigo-600'>ps: you can use any tech stack you want except for boilerplate and barebones HTML and CSS</i><br /><br />
-        </li>
-        <li>
-          <strong className='text-indigo-600'>Create an engaging Instagram reel out of your MIT ID card in a vertical aspect ratio not more than 12 seconds long. You are free to use any extra props and equipment.</strong><br />
-          <br />
-          <i className='text-indigo-600'>ps: we're serious about it.</i><br /><br />
-        </li>
-        <li>
-          <strong className='text-indigo-600'>Create/replicate any poster from the given website (<a href='https://posteritati.com/tag/criterion-collection' className='underline text-indigo-600'>https://posteritati.com/tag/criterion-collection</a>) adding your own flair but embodying the ethos of a student satellite team. When you send your work, link the original inspiration.</strong>
-        </li>
-      </ul>
-    </>
-  )
-}
-
-const AdminChallengeData = {
-  challengeContext: AdminChallengeContext,
-  challengeQuestions: AdminChallengeQuestions,
-}
 
 export default function Administration() {
   return (
     <div className="administration-page">
       <Hero Data={AdminHeroData} />
       <Summary Data={AdminSummaryData} />
-      <Challenge Data={AdminChallengeData} />
+
     </div>
   );
 }
