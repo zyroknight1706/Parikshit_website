@@ -93,7 +93,7 @@ export default function Recruitments() {
           </p>
         </div>*/}
 
-        {/* Urgency notice */}
+        {/* Urgency notice 
         <div className="text-center mt-16">
           <span className="text-indigo-600 text-2xl">Hurry Up! </span>
           <br />
@@ -104,7 +104,7 @@ export default function Recruitments() {
           </strong>
           <br />
           <br />
-        </div>
+        </div>*/}
 
         {/* Grid layout for posts with background video */}
         <div className="relative mx-auto mt-10 max-w-7xl pt-10 sm:mt-16 sm:pt-16 border-t-2 border-indigo-600">
