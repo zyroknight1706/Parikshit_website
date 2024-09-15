@@ -132,7 +132,7 @@ const teamMembers = [
   {
     name: 'Aanya Shantaram',
     role: 'ODHS Team Member',
-    image: '/timages/image1000.jpg',
+    image: '/timages/aanya.jpg',
     //github: 'https://github.com/aanyashantaram',
     linkedin: 'https://www.linkedin.com/in/aanya-shantaram-a9912a2aa/',
   },
