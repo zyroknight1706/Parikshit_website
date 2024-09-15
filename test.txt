@@ -1,0 +1,179 @@
+import React from 'react'
+import Image from 'next/image'
+import header from './../../public/header.jpg'
+
+const Header = () => {
+  return (
+    <header className='flex flex-col justify-between'>
+      <div className='relative w-full'>
+        <div className='absolute -z-10 w-full'>
+            <Image src={header} alt='Background Image' className='w-full max-h-[1000vh]' width={1000} />
+        </div>
+      </div>
+      <div className='max-w-screen-lg ml-[30vh] h-[100vh] my-60 rounded-2xl font-black text-7xl text-amber-200 transition duration-300 ease-in-out'>
+        Extending Thoughts into space...
+
+        <p className='max-w-screen-lg ml-[18vh] my-[10vh] h-[300vh] items-center rounded-2xl text-2xl text-center text-amber-200 transition duration-300 ease-in-out'>
+          Parikshit is your 'Pariksha'! Learn well, question deeply. Don't take anything for granted.Success will be yours. God Bless,Happy Creating and testing!"
+          <br />
+          <br />
+        -Wing Commander Rakesh Sharma, First Indian in Space, Visiting Parikshit
+        </p>
+      </div> 
+    </header>
+  )
+}
+
+export default Header
+
+// "use client"
+// import React, { useState } from 'react'
+// import Image from 'next/image'
+// import Logo from './../../public/Logo.png'
+
+// const Navbar = () => {
+//     const [isClick, setIsClick] = useState(false)
+//     const toggleNavbar = () => {
+//         setIsClick(!isClick)
+//     }
+//   return (
+//     <nav className='bg-black p-3'>
+//         <div className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
+//             <div className='flex items-center justify-between h-16'>
+//                 <div className='flex items-center'>
+//                     <div className='flex-shrink-0'>
+//                         <a href='/' className='text-white'><Image className='w-[6vw]'  src={Logo} alt="logo" /></a>
+//                     </div>
+//                 </div>
+//                 <div className='hidden md:block'>
+//                     <div className='ml-4 flex items-center space-x-4'>
+//                         <a href='/' className='text-white hover:bg-indigo-600 hover:text-black rounded-lg p-2 transition  duration-300 ease-in-out'>Subsystems</a>
+//                         <a href='/' className='text-white hover:bg-indigo-600 hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Contact Us</a>
+//                         <a href='/' className='text-white hover:bg-indigo-600 hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Join Us</a>
+//                         <a href='/' className='text-white hover:bg-indigo-600 hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Projects</a>
+//                     </div>
+//                 </div>
+//                 <div className='md:hidden flex items-center'>
+//                     <button className='inline-flex items-center justify-center p-2 rounded-md text-white
+//                      hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
+//                      transition  duration-300 ease-in-out' 
+//                      onClick={toggleNavbar}>
+//                         {
+//                             isClick? (
+//                                 <svg 
+//                                 className='h-6 w-6'
+//                                 xmlns='http://www.w3.org/2000/svg'
+//                                 fill='none'
+//                                 viewBox='0 0 24 24'
+//                                 stroke='currentColor'
+//                                 >
+//                                     <path
+//                                     strokeLinecap='round'
+//                                     strokeLinejoin='round'
+//                                     strokeWidth={2}
+//                                     d='M6 18L18 6M6 6l12 12'
+//                                     />
+//                                 </svg>
+//                             ) : (
+//                                 <svg 
+//                                 className='h-6 w-6'
+//                                 xmlns='http://www.w3.org/2000/svg'
+//                                 fill='none'
+//                                 viewBox='0 0 24 24'
+//                                 stroke='currentColor'
+//                                 >
+//                                     <path
+//                                     strokeLinecap='round'
+//                                     strokeLinejoin='round'
+//                                     strokeWidth={2}
+//                                     d='M4 6h16M4 12h16m-7 6h7'
+//                                     />
+//                                 </svg> 
+//                             )
+//                         }
+//                      </button>
+//                 </div>
+//             </div>
+//         </div>
+//         {isClick && (
+//             <div className='md:hidden'>
+//                 <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 transition duration-300 ease-in-out'>
+//                     <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition  duration-300 ease-in-out'>Subsystems</a>
+//                     <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Contact Us</a>
+//                     <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Join Us</a>
+//                     {/* <a href='/' className='text-white block hover:bg-white hover:text-black rounded-lg p-2 transition duration-300 ease-in-out'>Projects</a> */}
+//                 </div>
+//             </div>
+//         )}
+//     </nav>
+//   )
+// }
+
+// export default Navbar
+
+<div className="mt-10">
+                {/* Decorative image grid */}
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+                >
+                  <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                    <div className="flex items-center space-x-6 lg:space-x-8">
+                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                      </div>
+                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                      </div>
+                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <img
+                            alt=""
+                            src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>

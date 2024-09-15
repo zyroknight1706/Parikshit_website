@@ -1,0 +1,85 @@
+.team-container {
+  background-color: #0a0a0a; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 100px 20px 50px;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #f0f0f0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.team-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.team-info {
+  margin-top: 15px;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.team-role {
+  font-size: 1.2rem;
+  color: #9a9a9a;
+}
+
+.team-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #00acee; /* Add a hover color (LinkedIn blue) */
+}
+
+.social-link:nth-child(1):hover {
+  color: #333; /* GitHub hover color */
+}
+
+.social-link:nth-child(2):hover {
+  color: #0e76a8; /* LinkedIn hover color */
+}

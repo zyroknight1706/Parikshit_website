@@ -1,0 +1,122 @@
+/* COMMS.css */
+
+/* General padding for the entire page */
+.comms-page {
+  padding-top: 100px; /* Ensures content is not covered by the navbar */
+  margin: 0 auto;
+}
+
+/* Ensure images are responsive and maintain aspect ratio */
+.comms-page img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('./bg.jpeg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+/* Text alignment and spacing */
+.comms-page p,
+.comms-page ul,
+.comms-page ol {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.comms-page ul,
+.comms-page ol {
+  padding-left: 40px;
+}
+
+/* Headings */
+.comms-page h1,
+.comms-page h2,
+.comms-page h3 {
+  color: white;
+  text-align: center;
+}
+
+/* List styling */
+.comms-page ul.list-disc {
+  list-style-type: disc;
+}
+
+.comms-page ol.list-decimal {
+  list-style-type: decimal;
+}
+
+/* List inside spacing */
+.comms-page ol.list-inside {
+  padding-left: 20px;
+}
+
+.comms-page ul.list-inside {
+  padding-left: 20px;
+}
+
+/* Highlighted text */
+.text-indigo-600 {
+  color: #5c6ac4;
+}
+
+.text-stone-200 {
+  color: #e2e2e2;
+}
+
+/* Ensure proper spacing between sections */
+.section-spacing {
+  margin-top: 50px;
+}
+
+/* Center content and limit width */
+.centered-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Ensures that side images and other elements are aligned properly */
+.side-img-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.side-img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Special styling for the challenge section to make it more prominent */
+.challenge-context {
+  background-color: #1a1a1a; /* Dark background to highlight the section */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.challenge-context .text-center {
+  text-align: center;
+}
+
+.challenge-context span,
+.challenge-context strong,
+.challenge-context i {
+  color: #5c6ac4; /* Indigo color for consistency */
+}
+
+@media (max-width: 768px) {
+  .comms-page {
+    padding: 100px 10px 50px; /* Adjust padding for smaller screens */
+  }
+}

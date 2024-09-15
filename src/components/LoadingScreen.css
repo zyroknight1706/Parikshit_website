@@ -1,0 +1,52 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.logo-container {
+  position: relative;
+  width: 200px; /* Increase the size for better visibility */
+  height: 200px; /* Increase the size for better visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-logo {
+  width: 100%; /* Make sure the logo fits the container */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1;
+}
+
+.pulse-effect {
+  position: absolute;
+  width: 220px; /* Adjust size slightly larger than the logo container */
+  height: 220px; /* Adjust size slightly larger than the logo container */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1); /* Soft white glow */
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}

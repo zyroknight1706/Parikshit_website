@@ -1,0 +1,80 @@
+.sponsors-container {
+  background-color: #000; /* Black background to match the space theme */
+  background-image: url('/images/stars-background.jpg'); /* Add a space-themed background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* White text to contrast against the dark background */
+  padding: 100px 20px 50px; /* Added padding at the top to avoid overlap with the navbar */
+  text-align: center;
+  min-height: 100vh; /* Ensure the section covers the full height of the screen */
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* No background color here to keep the black theme */
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #1e90ff; /* Bright blue for the header */
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd; /* Light gray for better contrast */
+}
+
+.sponsors-section {
+  margin: 40px 0;
+}
+
+.no-sponsors-text {
+  font-size: 20px;
+  color: #ddd; /* Light gray for better contrast */
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin: 40px 0;
+}
+
+.form-title {
+  font-size: 28px;
+  color: #1e90ff; /* Bright blue for emphasis */
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: #fff; /* White background for the form */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding around the iframe */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow for floating effect */
+  display: inline-block; /* Ensure container fits the iframe size */
+  max-width: 100%;
+}
+
+.form-iframe {
+  border: none;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+.footer-link {
+  color: #1e90ff; /* Bright blue for emphasis */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

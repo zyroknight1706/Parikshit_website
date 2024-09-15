@@ -1,0 +1,57 @@
+.gallery-container {
+  background-color: #000; /* Dark background to match the space theme */
+  padding: 100px 20px 50px;  /* Padding for the gallery section */
+  text-align: center;
+  color: #fff; /* White text color */
+  min-height: 100vh; 
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #fff; /* White text color for contrast */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap onto new lines */
+  gap: 20px; /* Increase spacing between images */
+  justify-content: center; /* Center images horizontally */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow for depth */
+  flex: 1 1 100%; /* Full width on smaller screens */
+  max-width: 600px; /* Set a maximum width for larger images */
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Rounded corners for images */
+  object-fit: contain; /* Show entire image without cropping */
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .gallery-item {
+    flex: 1 1 48%; /* Two images per row on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-item {
+    flex: 1 1 30%; /* Three images per row on larger screens */
+  }
+}
