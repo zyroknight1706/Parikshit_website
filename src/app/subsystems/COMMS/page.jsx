@@ -40,65 +40,13 @@ const COMMSSummaryData = {
 };
 
 // Challenge Context Component (Empty for now)
-const COMMSChallengeContext = () => null;
-
-// Challenge Questions Component
-const COMMSChallengeQuestions = () => (
-  <div className="text-justify">
-    <div className="text-center mt-16">
-      <span className='bg-indigo-100 text-indigo-600 text-2xl font-bold py-2 px-4 rounded-lg'>
-        Hurry Up!
-      </span>
-      <br /><br />
-      <strong className='bg-indigo-50 text-indigo-800 text-xl font-semibold py-2 px-4 rounded-lg'>
-        The last submission will be accepted on 11<sup>th</sup> September 11:59 pm
-      </strong>
-      <br /><br />
-    </div>
-
-
-    <span className='text-indigo-600 font-bold text-center text-3xl'>Questions:</span>
-    <br /><br />
-    <ol className='list-decimal'>
-      <li>
-        <strong className='text-indigo-600'>
-          Design a communication system for a communication link to be established between PAGOS (Parikshit Ground Station) and the cubesat orbiting at an altitude of 500 km (LEO).
-          <br /><br />
-          The following are the basic goals which we require you to complete:
-        </strong>
-        <ul className='list-inside list-disc ps-10'>
-          <li>Know the basic RF components required for a communication system.</li>
-          <li>Get versed with the different terms associated with a RF link Budget.</li>
-          <li>Choose an appropriate carrier frequency, modulation technique, bandwidth, and bit rate required for the data transmission.</li>
-          <li>Understand the format of the data flow in order to receive your message/information in PAGOS from a satellite.</li>
-          <li>Choose an appropriate Transceiver for both cubesat and PAGOS.</li>
-          <li>Explore different types of antenna and find an appropriate one for PAGOS and the cubesat by considering the appropriate parameters.</li>
-          <li>Make an RF Link Budget.</li>
-        </ul>
-        <br />
-        <i className='text-indigo-600'>The scores will be based on how many goals you have accomplished and the justifications you give for it.</i>
-        <br /><br />
-      </li>
-      <li>
-        <strong className='text-indigo-600'>Design an RF Transmitter or RF Receiver architecture.</strong>
-        <br /><br />
-      </li>
-    </ol>
-  </div>
-);
-
-// Challenge Section Data
-const COMMSChallengeData = {
-  challengeContext: COMMSChallengeContext,
-  challengeQuestions: COMMSChallengeQuestions,
-};
 
 export default function COMMS() {
   return (
     <div className="comms-page">
       <Hero Data={COMMSHeroData} />
       <Summary Data={COMMSSummaryData} />
-      <Challenge Data={COMMSChallengeData} />
+
     </div>
   );
 }
