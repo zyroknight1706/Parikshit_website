@@ -18,11 +18,7 @@ export default function Hero({ Data }) {
                 : 'relative rounded-full px-3 md:py-1 text-[20px] font-bold leading-6 text-white bg-indigo-600 md:text-lg'
               }
             >
-              Announcing our next round of recruitments.{' '}
-              <a href={Data.readHREF} className="font-semibold text-white underline rounded-lg p-2">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+             
             </div>
           </div>
           <div className="text-left mb-6 lg:mb-10">
