@@ -62,10 +62,10 @@ export default function Recruitments() {
     <div id="recruitments" className="bg-black py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* LIVE RECRUITMENTS container */}
-        <div className="bg-indigo-600 rounded-lg shadow-lg p-8 text-white max-w-3xl mx-auto mb-16">
-          <h3 className="text-3xl font-bold text-center mb-4">LIVE RECRUITMENTS</h3>
+        {/*<div className="bg-indigo-600 rounded-lg shadow-lg p-8 text-white max-w-3xl mx-auto mb-16">
+          <h3 className="text-3xl font-bold text-center mb-4">LIVE RECRUITMENTS</h3>*/}
 
-          {/* Center-aligned recruitment message */}
+          {/* Center-aligned recruitment message 
           <div className="flex flex-col items-center justify-center">
             <p className="text-lg leading-7 font-medium text-center mb-4">
               We are Recruiting!!! Apply Now to be a part of our team
@@ -80,9 +80,9 @@ export default function Recruitments() {
               Apply Now
             </a>
           </div>
-        </div>
+        </div>*/}
 
-        {/* Center-align heading and paragraph */}
+        {/* Center-align heading and paragraph 
         <div className="text-center mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
             Recruitment Challenges
@@ -91,7 +91,7 @@ export default function Recruitments() {
             Learn about all our subsystems, and then click to know more about the subsystem that
             you're interested in and their Recruitment Challenge.
           </p>
-        </div>
+        </div>*/}
 
         {/* Urgency notice */}
         <div className="text-center mt-16">
