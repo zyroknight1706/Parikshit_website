@@ -139,7 +139,7 @@ const teamMembers = [
   {
     name: 'Shashwat Harsh',
     role: 'ODHS Team Member',
-    image: '/timages/image1000.png',
+    image: '/timages/sashwath.png',
     //github: 'https://github.com/sashwatharsh',
     linkedin: 'https://www.linkedin.com/in/shash3h/',
   },
