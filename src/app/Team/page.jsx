@@ -90,7 +90,7 @@ const teamMembers = [
   {
     name: 'Visalakshi S',
     role: 'ADCS Team Member',
-    image: '/timages/image24.jpg',
+    image: '/timages/visalakshi.jpg',
     //github: 'https://github.com/visalakshi',
     linkedin: 'https://www.linkedin.com/in/visalakshi-subramanian-3247812a6/',
   },
