@@ -111,7 +111,7 @@ const teamMembers = [
   {
     name: 'Jayant Sharma',
     role: 'COMMS Team Member',
-    image: '/timages/image199.jpg',
+    image: '/timages/jayanth.jpg',
     //github: 'https://github.com/jayanthsharma',
     linkedin: 'https://www.linkedin.com/in/jayant-s-248783212/',
   },
