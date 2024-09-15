@@ -221,9 +221,9 @@ const Team = () => {
                 <h3 className="team-name">{member.name}</h3>
                 <p className="team-role">{member.role}</p>
                 <div className="team-links">
-                  <a href={member.github} target="_blank" rel="noopener noreferrer" className="team-link">
+                  {/*<a href={member.github} target="_blank" rel="noopener noreferrer" className="team-link">
                     <FaGithub className="icon github-icon" />
-                  </a>
+                  </a>*/}
                   <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="team-link">
                     <FaLinkedin className="icon linkedin-icon" />
                   </a>
