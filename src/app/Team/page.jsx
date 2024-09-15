@@ -88,7 +88,7 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/sudeekshab/',
   },
   {
-    name: 'Visalakshi',
+    name: 'Visalakshi S',
     role: 'ADCS Team Member',
     image: '/timages/image24.jpg',
     github: 'https://github.com/visalakshi',
@@ -109,14 +109,14 @@ const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/nidhihegde/',
   },
   {
-    name: 'Jayanth Sharma',
+    name: 'Jayant Sharma',
     role: 'COMMS Team Member',
     image: '/timages/image199.jpg',
     github: 'https://github.com/jayanthsharma',
     linkedin: 'https://www.linkedin.com/in/jayanthsharma/',
   },
   {
-    name: 'Akshay',
+    name: 'Akshay ',
     role: 'EPS Team Member',
     image: '/timages/image17.jpg',
     github: 'https://github.com/akshay',
