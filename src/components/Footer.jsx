@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
+  const [showEasterEgg, setShowEasterEgg] = useState(false)
+
   return (
     <footer id='Contact'>
       <div className='p-10 bg-gray-800 text-white '>
@@ -42,11 +44,20 @@ const Footer = () => {
       </div>
       <div className='w-full bg-gray-900 text-gray-500 px-10'>
         <div>
-          <div className='text-center'>
+          <div 
+            className='text-center relative' 
+            onMouseEnter={() => setShowEasterEgg(true)} 
+            onMouseLeave={() => setShowEasterEgg(false)}
+          >
             Copyright <strong><span>Parikshit Student Satellite</span></strong> 2024. All Rights Reserved.
+            {showEasterEgg && (
+              <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 bg-gray-700 text-white p-2 rounded'>
+                You found the hidden treasure! 🏆
+              </div>
+            )}
           </div>
           <div className='text-center'>
-            Designed by <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Atulya Mishra 😎 | Siddhartha Chhauda :)</a>
+            Designed by <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Atulya Mishra 😎 | Siddhartha Chhauda ☮️</a>
           </div>
         </div>
       </div>
