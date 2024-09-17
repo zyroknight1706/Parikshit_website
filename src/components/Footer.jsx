@@ -52,7 +52,7 @@ const Footer = () => {
             Copyright <strong><span>Parikshit Student Satellite</span></strong> 2024. All Rights Reserved.
             {showEasterEgg && (
               <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 bg-gray-700 text-white p-2 rounded'>
-                You found the hidden treasure! 🏆
+                 Shhhhhhhhhhhhhhhhhhhhhh .............. You found it !!!
               </div>
             )}
           </div>
