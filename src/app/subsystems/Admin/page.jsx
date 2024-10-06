@@ -18,11 +18,9 @@ const AdminHeroData = {
 };
 
 // Quote Component
-const Quote = () => (
-  return (
-  <i>The invisible threads of coordination weave the fabric of success....</i>
-  );
-);
+const Quote = () => {
+  return <i>Thread of coordination though invisible in nature are the ones on which our success rests.....</i>;
+};
 
 // Upper Description Component
 const UpperDesc = () => (
