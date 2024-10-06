@@ -1,7 +1,7 @@
 import Hero from '@/components/Hero';
 import React from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types'; // For prop validation
+//import PropTypes from 'prop-types'; // For prop validation
 import Summary from '@/components/Summary';
 import './Administration.css';
 
