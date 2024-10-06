@@ -1,7 +1,9 @@
 import React from 'react';
 import Hero from '@/components/Hero';
+import Image from 'next/image';
 import Summary from '@/components/Summary';
 import bg from './bnhj.jpeg';
+import Challenge from '@/components/Challenge';
 import SideImg from './SideImg.jpg';
 import './Administration.css';
 
@@ -70,3 +72,5 @@ export default function Administration() {
     </div>
   );
 }
+
+export default Admin; 
