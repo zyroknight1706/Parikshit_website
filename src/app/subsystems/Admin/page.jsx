@@ -31,6 +31,7 @@ const UpperDesc = () => (
 
 // Lower Description Component
 const LowerDesc = () => (
+  return (
   <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
     <div className="lg:pr-4">
       <div className="max-w-xl text-xl leading-7 text-stone-200 lg:max-w-lg text-justify">
@@ -53,6 +54,7 @@ const LowerDesc = () => (
       </div>
     </div>
   </div>
+  );
 );
 
 // Summary Section Data for Administration
