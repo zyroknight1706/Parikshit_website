@@ -46,7 +46,7 @@ const FlyerLink = ({ children, href, FlyerContent, openFlyer, toggleFlyer }) => 
 const SubsystemsContent = () => {
   return (
     <div className="p-4 space-y-2 bg-gray-900 rounded-lg">
-      {["ADCS", "COMMS", "EPS", "ODHS", "PAYLOAD", "STMS", "ADMIN"].map(
+      {["ADCS", "COMMS", "EPS", "ODHS", "PAYLOAD", "STMS", "Admin"].map(
         (subsystem) => (
           <a
             key={subsystem}
