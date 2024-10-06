@@ -64,13 +64,13 @@ const AdminSummaryData = {
 };
 
 // Main Administration Component
-export default function Administration() {
+const Admin = () => {
   return (
     <div className="administration-page">
       <Hero Data={AdminHeroData} />
       <Summary Data={AdminSummaryData} />
     </div>
   );
-}
+};
 
 export default Admin; 
