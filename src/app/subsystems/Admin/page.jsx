@@ -1,35 +1,42 @@
 import Hero from '@/components/Hero';
 import React from 'react';
 import Image from 'next/image';
-import bg from './bnhj.jpeg';
+import PropTypes from 'prop-types'; // For prop validation
 import Summary from '@/components/Summary';
-import SideImg from './SideImg.jpg';
 import './Administration.css';
 
+// Import images from the public folder
+const bgImgSrc = "/bnhj.jpeg";
+const sideImgSrc = "/SideImg.jpg";
+
+// Hero data object
 const AdminHeroData = {
-  bgImg: <Image src={bg} alt="background" />,
+  bgImg: <Image src={bgImgSrc} alt="background" layout="fill" objectFit="cover" />, // Using Next.js Image component
   readHREF: "#recruitments",
   whiteBg: true,
   isAdmin: true,
   mainTitle: "Operations and Administration Subsystem",
   quote: '',
   addAuth: false,
-}
+};
 
+// Quote Component
 const Quote = () => {
   return (
     <i>The invisible threads of coordination weave the fabric of success....</i>
-  )
-}
+  );
+};
 
+// Upper Description Component
 const UpperDesc = () => {
   return (
     <p className="mt-6 text-xl leading-8 text-stone-200 font-black text-justify">
       At the heart of our organization's efficiency lies the <span className='text-indigo-600'>Operations and Administration Subsystem</span>. This integral part of our team ensures that all aspects of our digital presence run smoothly, with a focus on the following key areas:
     </p>
-  )
-}
+  );
+};
 
+// Lower Description Component
 const LowerDesc = () => {
   return (
     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -54,20 +61,32 @@ const LowerDesc = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
+// Summary data object
 const AdminSummaryData = {
-  quote: <Quote />,
-  upperDesc: UpperDesc,
-  sideImg: <Image src={SideImg} alt="Side Image" />,
-  lowerDesc: LowerDesc,
-}
+  quote: <Quote />, // Rendered as JSX
+  upperDesc: <UpperDesc />, // Rendered as JSX
+  sideImg: <Image src={sideImgSrc} alt="Side Image" width={500} height={500} />, // Using Next.js Image component
+  lowerDesc: <LowerDesc />, // Rendered as JSX
+};
 
+// Hero component prop type validation
+Hero.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+// Summary component prop type validation
+Summary.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+// Main Administration Component
 export default function Administration() {
   return (
     <div className="administration-page">
-      <Hero data={AdminHeroData} /> 
+      <Hero data={AdminHeroData} />
       <Summary data={AdminSummaryData} />
     </div>
   );
