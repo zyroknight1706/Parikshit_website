@@ -19,14 +19,18 @@ const AdminHeroData = {
 
 // Quote Component
 const Quote = () => (
+  return (
   <i>The invisible threads of coordination weave the fabric of success....</i>
+  );
 );
 
 // Upper Description Component
 const UpperDesc = () => (
+  return (
   <p className="mt-6 text-xl leading-8 text-stone-200 font-black text-justify">
     At the heart of our organization's efficiency lies the <span className='text-indigo-600'>Operations and Administration Subsystem</span>. This integral part of our team ensures that all aspects of our digital presence run smoothly, with a focus on the following key areas:
   </p>
+  );
 );
 
 // Lower Description Component
