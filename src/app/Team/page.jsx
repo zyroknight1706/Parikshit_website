@@ -104,14 +104,14 @@ const teamMembers = [
   {
     name: 'Shrihar Pande',
     role: 'Payload Head',
-    image: '/timages/image1.jpg',
+    image: '/timages/shrihar.jpg',
     //github: 'https://github.com/shriharpande',
     linkedin: 'https://www.linkedin.com/in/shrihar-pande-b866a8274/',
   },
   {
     name: 'Roselin Maria',
     role: 'Payload Head',
-    image: '/timages/image8.png',
+    image: '/timages/rose.png',
     //github: 'https://github.com/roselinmaria',
     linkedin: 'https://www.linkedin.com/in/roselin-maria-83900a286/',
   },
@@ -153,7 +153,7 @@ const teamMembers = [
   {
     name: 'Akshay Sai',
     role: 'EPS Team Member',
-    image: '/timages/image17.jpg',
+    image: '/timages/akshay.jpg',
     //github: 'https://github.com/akshay',
     linkedin: '--',
   },
@@ -195,7 +195,7 @@ const teamMembers = [
   {
     name: 'Siddhartha Chhauda',
     role: 'Payload Team Member',
-    image: '/timages/image9.jpg',
+    image: '/timages/sid.jpg',
     //github: 'https://github.com/sidharthchhauda',
     linkedin: 'https://www.linkedin.com/in/siddhartha-chhauda-b6b484311/',
   },
