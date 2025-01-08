@@ -48,7 +48,7 @@ const teamMembers = [
   {
     name: 'Shashwat Harsh',
     role: 'System Engineer',
-    image: '/timages/shashwath.png',
+    image: '/timages/sashwath.jpg',
     //github: 'https://github.com/sashwatharsh',
     linkedin: 'https://www.linkedin.com/in/shash3h/',
   },
@@ -111,7 +111,7 @@ const teamMembers = [
   {
     name: 'Roselin Maria',
     role: 'Payload Head',
-    image: '/timages/rose.png',
+    image: '/timages/rose.jpg',
     //github: 'https://github.com/roselinmaria',
     linkedin: 'https://www.linkedin.com/in/roselin-maria-83900a286/',
   },
