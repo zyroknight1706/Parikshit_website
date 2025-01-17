@@ -13,7 +13,7 @@ const teamMembers = [
   {
     name: 'Srishti Singh',
     role: 'System Engineer',
-    image: '/timages/image21.jpg',
+    image: '/timages/newTeamPictures/srishti.jpg',
     //github: 'https://github.com/srishtisingh',
     linkedin: 'https://www.linkedin.com/in/srishti-singh-7bb2b5267/',
   },
@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: 'Swetha M.R',
     role: 'System Admin',
-    image: '/timages/image23.jpg',
+    image: '/timages/newTeamPictures/swetha.jpg',
     //github: 'https://github.com/swethamr',
     linkedin: 'https://www.linkedin.com/in/swetha-mr-651bb2270/',
   },
@@ -195,7 +195,7 @@ const teamMembers = [
   {
     name: 'Siddhartha Chhauda',
     role: 'Payload Team Member',
-    image: '/timages/sid.jpg',
+    image: '/timages/newTeamPictures/sid2.jpg',
     //github: 'https://github.com/sidharthchhauda',
     linkedin: 'https://www.linkedin.com/in/siddhartha-chhauda-b6b484311/',
   },
