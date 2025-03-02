@@ -57,7 +57,7 @@ const Footer = () => {
             )}
           </div>
           <div className='text-center'>
-            Designed by <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Atulya Mishra 😎 | Siddhartha Chhauda ☮️</a>
+            Designed by <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>| Siddhartha Chhauda ☮️</a>
           </div>
         </div>
       </div>
