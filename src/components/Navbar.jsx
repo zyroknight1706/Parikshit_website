@@ -46,7 +46,7 @@ const FlyerLink = ({ children, href, FlyerContent, openFlyer, toggleFlyer }) => 
 const SubsystemsContent = () => {
   return (
     <div className="p-4 space-y-2 bg-gray-900 rounded-lg">
-      {["ADCS", "COMMS", "EPS", "ODHS", "PAYLOAD", "STMS", "Admin"].map(
+      {["ADCS", "COMMS", "EPS", "ODHS", "PAYLOAD", "STMS", "ADMIN"].map(
         (subsystem) => (
           <a
             key={subsystem}
@@ -127,7 +127,7 @@ const Navbar = () => {
             >
               Team
             </FlyerLink>
-            {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us"].map(
+            {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us" , "CANSAT"].map(
               (link) => (
                 <a
                   key={link}
@@ -184,7 +184,7 @@ const Navbar = () => {
               >
                 Team
               </FlyerLink>
-              {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us"].map(
+              {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us" , "CANSAT" ].map(
                 (link) => (
                   <a
                     key={link}
