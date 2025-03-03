@@ -7,46 +7,84 @@ import './CANSAT.css';
 
 const CANSATPage = () => {
   // Effect for animations on page load
-  useEffect(() => {
-    // Function to check if element is in viewport
-    const isInViewport = (element) => {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    };
+  // Add this updated useEffect in your CANSATPage component
 
-    // Function to handle scroll animations
-    const handleScroll = () => {
-      const animatedElements = document.querySelectorAll('.animate-on-scroll');
-      
-      animatedElements.forEach((element) => {
-        if (isInViewport(element) && !element.classList.contains('animated')) {
-          element.classList.add('animated');
-        }
-      });
-    };
+useEffect(() => {
+  // Function to check if element is in viewport with offset
+  // Mobile devices need more generous threshold
+  const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+    // On mobile, trigger animations when elements are closer to viewport
+    const isMobile = window.innerWidth < 768;
+    const threshold = isMobile ? windowHeight * 0.2 : 0;
+    
+    return (
+      rect.top <= windowHeight - threshold &&
+      rect.bottom >= 0 &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth) &&
+      rect.right >= 0
+    );
+  };
 
-    // Initial check for elements in viewport
-    handleScroll();
-
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Add floating animation to particles
-    const particles = document.querySelectorAll('.particle');
-    particles.forEach((particle, index) => {
-      particle.style.animationDelay = `${index * 0.2}s`;
+  // Function to handle scroll animations
+  const handleScroll = () => {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    animatedElements.forEach((element) => {
+      if (isInViewport(element) && !element.classList.contains('animated')) {
+        element.classList.add('animated');
+      }
     });
+  };
 
-    // Cleanup on unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // Initial check for elements in viewport
+  // Use setTimeout to ensure elements are fully rendered
+  setTimeout(handleScroll, 300);
+
+  // Add scroll event listener with throttling
+  let scrollTimeout;
+  const throttledScroll = () => {
+    if (!scrollTimeout) {
+      scrollTimeout = setTimeout(() => {
+        handleScroll();
+        scrollTimeout = null;
+      }, 100);
+    }
+  };
+  
+  window.addEventListener('scroll', throttledScroll);
+  window.addEventListener('resize', throttledScroll);
+  window.addEventListener('orientationchange', handleScroll);
+
+  // Add immediate animation for elements visible on load
+  const animateVisibleElements = () => {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    animatedElements.forEach((element) => {
+      // For mobile, trigger animations immediately or with small delay
+      if (window.innerWidth < 768) {
+        setTimeout(() => {
+          element.classList.add('animated');
+        }, 500);
+      } else if (isInViewport(element)) {
+        element.classList.add('animated');
+      }
+    });
+  };
+  
+  // Run once on page load
+  animateVisibleElements();
+
+  // Cleanup on unmount
+  return () => {
+    window.removeEventListener('scroll', throttledScroll);
+    window.removeEventListener('resize', throttledScroll);
+    window.removeEventListener('orientationchange', handleScroll);
+    clearTimeout(scrollTimeout);
+  };
+}, []);
 
   return (
     <div className="cansat-page">
@@ -150,8 +188,9 @@ const CANSATPage = () => {
               <h3>RTIM Number: <span className="highlight">RITM0012653</span></h3>
             </div>
             <p>
-              The Parikshit Student Satellite Team from MIT Manipal consists of dedicated undergraduate students from various engineering disciplines. Our team brings together expertise in 
-              aerospace engineering, electronics, mechanical design, and computer science to 
+              The Parikshit Student Satellite Team from MIT Manipal consists of dedicated undergraduate and 
+              postgraduate students from various engineering disciplines. Our team brings together expertise in 
+              aerospace engineering, electronics, programming, mechanical design, and environmental science to 
               create innovative satellite solutions.
             </p>
             <p>
