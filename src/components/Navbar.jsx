@@ -127,7 +127,7 @@ const Navbar = () => {
             >
               Team
             </FlyerLink>
-            {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us" , "CANSAT"].map(
+            {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us" , "Competitions"].map(
               (link) => (
                 <a
                   key={link}
@@ -184,7 +184,7 @@ const Navbar = () => {
               >
                 Team
               </FlyerLink>
-              {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us" , "CANSAT" ].map(
+              {["Gallery", "Sponsors", "Research", "FAQs", "Contact Us" , "Competitions" ].map(
                 (link) => (
                   <a
                     key={link}
