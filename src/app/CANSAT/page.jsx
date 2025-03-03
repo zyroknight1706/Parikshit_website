@@ -150,9 +150,8 @@ const CANSATPage = () => {
               <h3>RTIM Number: <span className="highlight">RITM0012653</span></h3>
             </div>
             <p>
-              The Parikshit Student Satellite Team from MIT Manipal consists of dedicated undergraduate and 
-              postgraduate students from various engineering disciplines. Our team brings together expertise in 
-              aerospace engineering, electronics, programming, mechanical design, and environmental science to 
+              The Parikshit Student Satellite Team from MIT Manipal consists of dedicated undergraduate students from various engineering disciplines. Our team brings together expertise in 
+              aerospace engineering, electronics, mechanical design, and computer science to 
               create innovative satellite solutions.
             </p>
             <p>
