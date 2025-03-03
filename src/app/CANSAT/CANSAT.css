@@ -1,4 +1,131 @@
 /* Main container styles */
+/* Add these updated styles to your existing CSS */
+
+/* Update animation handling for mobile */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Improve animation performance */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.fade-in-up.animated {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none; /* Overriding keyframe animation with transitions for better performance */
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: opacity, transform;
+}
+
+.scale-in.animated {
+    opacity: 1;
+    transform: scale(1);
+    animation: none; /* Overriding keyframe animation with transitions for better performance */
+}
+
+/* Enhanced mobile styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .cansat-header {
+        height: 300px; /* Reduced height for mobile */
+    }
+    
+    .cansat-header h1 {
+        font-size: 2rem;
+    }
+    
+    .cansat-header p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .about-section, .model-section, .gallery-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    /* Force animations to complete faster on mobile */
+    .animate-on-scroll, .fade-in-up, .scale-in {
+        transition-duration: 0.5s;
+    }
+    
+    /* Make sure animations are more visible by increasing the movement */
+    .animate-on-scroll {
+        transform: translateY(15px);
+    }
+    
+    /* Improve animation visibility on dark backgrounds */
+    .animate-on-scroll.animated {
+        opacity: 1;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .cansat-header {
+        height: 250px;
+    }
+    
+    .cansat-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .cansat-header p {
+        font-size: 0.9rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+    
+    .gallery-item {
+        aspect-ratio: 16/9; /* Wider aspect ratio for small screens */
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .info-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Animations need to be even more immediate on small screens */
+    .animate-on-scroll, .fade-in-up, .scale-in {
+        transition-duration: 0.4s;
+    }
+}
+
 .cansat-page {
     background-color: #0a0d1a;
     color: #e1e6fa;
