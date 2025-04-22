@@ -38,6 +38,13 @@ const alumniMembers = [
     github: '#', // Add the correct GitHub link if available
     linkedin: '#', // Add the correct LinkedIn link if available
   },
+  {
+    name: 'Arnav Marwaha',
+    role: 'System Engineer',
+    image: '/timages/image14.jpg',
+    github: 'https://github.com/arnavmarwaha',
+    linkedin: 'https://www.linkedin.com/in/arnav-marwaha-a7487a219/',
+  },
   // Add more alumni members as needed
 ];
 
