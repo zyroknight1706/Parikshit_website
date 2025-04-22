@@ -45,6 +45,20 @@ const alumniMembers = [
     github: 'https://github.com/arnavmarwaha',
     linkedin: 'https://www.linkedin.com/in/arnav-marwaha-a7487a219/',
   },
+    {
+    name: 'Abhay Sharma',
+    role: 'Advisory Board',
+    image: '/timages/image12.jpg',
+    //github: 'https://github.com/abhaysharma',
+    linkedin: 'https://www.linkedin.com/in/abhay-sharma-b8180a222/',
+  },
+  {
+    name: 'Yash Srivastava',
+    role: 'Advisory Board',
+    image: '/timages/image16.jpg',
+    //github: 'https://github.com/yashsrivastava',
+    linkedin: 'https://www.linkedin.com/in/yash-srivastava-18b880240/',
+  },
   // Add more alumni members as needed
 ];
 
