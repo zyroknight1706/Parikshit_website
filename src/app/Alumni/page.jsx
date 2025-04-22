@@ -40,7 +40,7 @@ const alumniMembers = [
   },
   {
     name: 'Arnav Marwaha',
-    role: 'System Engineer',
+    role: 'Advisory Board',
     image: '/timages/image14.jpg',
     github: 'https://github.com/arnavmarwaha',
     linkedin: 'https://www.linkedin.com/in/arnav-marwaha-a7487a219/',
