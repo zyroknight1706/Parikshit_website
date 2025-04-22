@@ -3,13 +3,6 @@ import './Team.css'; // Import custom CSS file
 import { FaLinkedin } from 'react-icons/fa'; // Import GitHub and LinkedIn icons
 
 const teamMembers = [
-  // {
-  //   name: 'Arnav Marwaha',
-  //   role: 'System Engineer',
-  //   image: '/timages/image14.jpg',
-  //   //github: 'https://github.com/arnavmarwaha',
-  //   linkedin: 'https://www.linkedin.com/in/arnav-marwaha-a7487a219/',
-  // },
   {
     name: 'Srishti Singh',
     role: 'System Engineer',
@@ -73,13 +66,13 @@ const teamMembers = [
   //   //github: 'https://github.com/aniketpachaury',
   //   linkedin: 'https://www.linkedin.com/in/aniketpachaury/',
   // },
-  {
-    name: 'Atulya Mishra',
-    role: 'ADCS Head',
-    image: '/timages/image3.jpg',
-    //github: 'https://github.com/atulyamishra',
-    linkedin: 'https://www.linkedin.com/in/atulya-mishra-2b3952270/',
-  },
+  // {
+  //   name: 'Atulya Mishra',
+  //   role: 'ADCS Head',
+  //   image: '/timages/image3.jpg',
+  //   //github: 'https://github.com/atulyamishra',
+  //   linkedin: 'https://www.linkedin.com/in/atulya-mishra-2b3952270/',
+  // },
   {
     name: 'Jayant Sharma',
     role: 'COMMS Head',
@@ -122,13 +115,13 @@ const teamMembers = [
     //github: 'https://github.com/mokshagnanaidu',
     linkedin : 'https://www.linkedin.com/in/pasupuleti-mokshagna-naidu-51b679272/',
   },
-  {
-    name: 'Pranav Lakshmanan',
-    role: 'ADCS Team Member',
-    image: '/timages/image24.jpg',
-    //github: 'https://github.com/pranavlakshmanan',
-    linkedin: 'https://www.linkedin.com/in/pranav-lakshmanan/',
-  },
+  // {
+  //   name: 'Pranav Lakshmanan',
+  //   role: 'ADCS Team Member',
+  //   image: '/timages/image24.jpg',
+  //   //github: 'https://github.com/pranavlakshmanan',
+  //   linkedin: 'https://www.linkedin.com/in/pranav-lakshmanan/',
+  // },
   {
     name: 'Sudeeksha Bhattacharyya',
     role: 'ADCS Team Member',
